@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
 import { motion } from "motion/react";
+import { IncenseSmoke } from "../components/IncenseSmoke";
 import {
   Calendar,
   Heart,
@@ -44,6 +45,10 @@ export function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
         </div>
         
+        {/* Agarbatti Effects */}
+        <IncenseSmoke className="hidden md:flex left-12 lg:left-32" />
+        <IncenseSmoke className="right-8 md:right-12 lg:right-32" />
+
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
