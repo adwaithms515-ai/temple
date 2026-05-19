@@ -298,6 +298,33 @@ export function HomePage() {
         </div>
       </section>
 
+      {/* Map Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <MapPin className="w-12 h-12 text-[#d97706] mx-auto mb-4" />
+            <h2 className="font-heading text-3xl md:text-4xl text-[#78350f] mb-3">Find Us Here</h2>
+            <p className="text-[#78716c]">Temple Location & Directions</p>
+          </div>
+          <Card className="border-[#d97706]/20 overflow-hidden shadow-xl">
+            <CardContent className="p-0">
+              <div className="aspect-[21/9] w-full">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.789218698059!2d76.9392285!3d8.4839818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05a5a1f64c673d%3A0xc348507c3eab3357!2sSree%20Padmanabhaswamy%20Temple!5e0!3m2!1sen!2sin!4v1716104325838!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Temple Location Demo"
+                ></iframe>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-[#fef3e2] to-[#fbbf24]/20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
