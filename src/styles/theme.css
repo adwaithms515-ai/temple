@@ -2,29 +2,29 @@
 
 :root {
   --font-size: 16px;
-  --background: #faf8f5;
-  --foreground: #2d1810;
+  --background: #fffaf0; /* Warm temple cream */
+  --foreground: #5c1616; /* Deep maroon/crimson */
   --card: #ffffff;
-  --card-foreground: #2d1810;
+  --card-foreground: #5c1616;
   --popover: #ffffff;
-  --popover-foreground: #2d1810;
-  --primary: #d97706;
+  --popover-foreground: #5c1616;
+  --primary: #e65100; /* Vibrant saffron/orange */
   --primary-foreground: #ffffff;
-  --secondary: #f59e0b;
+  --secondary: #d32f2f; /* Deep temple red */
   --secondary-foreground: #ffffff;
-  --muted: #f5f1ed;
-  --muted-foreground: #78716c;
-  --accent: #fbbf24;
-  --accent-foreground: #2d1810;
+  --muted: #fcedd8; /* Soft sand */
+  --muted-foreground: #8a6c62;
+  --accent: #ffb300; /* Marigold gold */
+  --accent-foreground: #5c1616;
   --destructive: #dc2626;
   --destructive-foreground: #ffffff;
-  --border: rgba(217, 119, 6, 0.15);
+  --border: rgba(230, 81, 0, 0.2);
   --input: transparent;
-  --input-background: #fef3e2;
+  --input-background: #fff2d9;
   --switch-background: #e7dccf;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: #d97706;
+  --ring: #e65100;
   --chart-1: #d97706;
   --chart-2: #f59e0b;
   --chart-3: #fbbf24;
@@ -130,6 +130,9 @@
 
   body {
     @apply bg-background text-foreground;
+    background-color: var(--background);
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0c0 16.569-13.431 30-30 30 16.569 0 30 13.431 30 30 0-16.569 13.431-30 30-30-16.569 0-30-13.431-30-30z' fill='%23e65100' fill-opacity='0.04' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-attachment: fixed;
   }
 
   /**
