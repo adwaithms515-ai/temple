@@ -212,7 +212,7 @@ export function HomePage() {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {quickAccessCards.map((card, index) => (
+            {quickAccessCards.slice(0, 4).map((card, index) => (
               <motion.div
                 key={card.title}
                 initial={{ opacity: 0, y: 20 }}
@@ -232,6 +232,12 @@ export function HomePage() {
                 </Link>
               </motion.div>
             ))}
+          </div>
+          
+          <div className="mt-10 text-center">
+            <Button asChild variant="outline" className="border-[#d97706] text-[#d97706] hover:bg-[#fef3e2]">
+              <Link to="/about">View All Services</Link>
+            </Button>
           </div>
         </div>
       </section>
