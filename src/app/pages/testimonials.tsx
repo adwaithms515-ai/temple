@@ -12,12 +12,12 @@ export function TestimonialsPage() {
 
   return (
     <div className="min-h-screen bg-[#faf8f5]">
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#78350f] to-[#92400e]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
-            <Quote className="w-16 h-16 text-[#fbbf24] mx-auto mb-4" />
+            <Quote className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
             <h1 className="font-heading text-4xl md:text-6xl text-white mb-4">Testimonials</h1>
-            <p className="text-xl text-[#fbbf24]">Devotee Experiences & Blessings</p>
+            <p className="text-xl text-[#D4B870]">Devotee Experiences & Blessings</p>
           </motion.div>
         </div>
       </section>
@@ -33,21 +33,21 @@ export function TestimonialsPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="border-[#d97706]/20 hover:shadow-lg transition-shadow h-full">
+                <Card className="border-[#C9A227]/20 hover:shadow-lg transition-shadow h-full">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-1 mb-4">
                       {Array.from({ length: testimonial.rating }).map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-[#fbbf24] text-[#fbbf24]" />
+                        <Star key={i} className="w-5 h-5 fill-[#D4B870] text-[#D4B870]" />
                       ))}
                     </div>
-                    <Quote className="w-8 h-8 text-[#d97706]/20 mb-3" />
-                    <p className="text-[#78716c] mb-4 italic leading-relaxed">&ldquo;{testimonial.text}&rdquo;</p>
-                    <div className="flex items-center justify-between pt-4 border-t border-[#d97706]/20">
+                    <Quote className="w-8 h-8 text-[#C9A227]/20 mb-3" />
+                    <p className="text-[#666666] mb-4 italic leading-relaxed">&ldquo;{testimonial.text}&rdquo;</p>
+                    <div className="flex items-center justify-between pt-4 border-t border-[#C9A227]/20">
                       <div>
-                        <p className="font-heading text-[#78350f]">{testimonial.name}</p>
-                        <p className="text-sm text-[#78716c]">{testimonial.location}</p>
+                        <p className="font-heading text-[#6E1F1F]">{testimonial.name}</p>
+                        <p className="text-sm text-[#666666]">{testimonial.location}</p>
                       </div>
-                      <p className="text-xs text-[#d97706]">{testimonial.date}</p>
+                      <p className="text-xs text-[#C9A227]">{testimonial.date}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -59,3 +59,4 @@ export function TestimonialsPage() {
     </div>
   );
 }
+

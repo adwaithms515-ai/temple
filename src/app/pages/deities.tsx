@@ -66,16 +66,16 @@ export function DeitiesPage() {
   return (
     <div className="min-h-screen bg-[#faf8f5]">
       {/* Hero Section */}
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#78350f] to-[#92400e]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-4xl"
           >
-            <Sparkles className="w-16 h-16 text-[#fbbf24] mx-auto mb-4" />
+            <Sparkles className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
             <h1 className="font-heading text-4xl md:text-6xl text-white mb-4">Temple Deities</h1>
-            <p className="text-xl text-[#fbbf24]">Divine Presence & Sacred Blessings</p>
+            <p className="text-xl text-[#D4B870]">Divine Presence & Sacred Blessings</p>
           </motion.div>
         </div>
       </section>
@@ -97,19 +97,19 @@ export function DeitiesPage() {
                   <Card
                     className={`cursor-pointer transition-all ${
                       selectedDeity === index
-                        ? "border-[#d97706] shadow-lg bg-gradient-to-br from-[#fef3e2] to-white"
-                        : "border-[#d97706]/20 hover:shadow-md"
+                        ? "border-[#C9A227] shadow-lg bg-gradient-to-br from-[#FAF6EE] to-white"
+                        : "border-[#C9A227]/20 hover:shadow-md"
                     }`}
                     onClick={() => setSelectedDeity(index)}
                   >
                     <CardContent className="p-4">
                       <div className="flex items-center space-x-3">
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#d97706] to-[#f59e0b] flex items-center justify-center flex-shrink-0 shadow-md">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#C9A227] to-[#D4B870] flex items-center justify-center flex-shrink-0 shadow-md">
                           <Sparkles className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                          <h3 className="font-heading text-[#78350f]">{deity.name}</h3>
-                          <p className="text-sm text-[#d97706]">{deity.title}</p>
+                          <h3 className="font-heading text-[#6E1F1F]">{deity.name}</h3>
+                          <p className="text-sm text-[#C9A227]">{deity.title}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -126,18 +126,18 @@ export function DeitiesPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
               >
-                <Card className="border-[#d97706]/20 overflow-hidden shadow-xl">
+                <Card className="border-[#C9A227]/20 overflow-hidden shadow-xl">
                   {/* Deity Image with Glow Effect */}
                   <div className="relative h-[400px] overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#78350f] via-transparent to-transparent z-10"></div>
-                    <div className="absolute inset-0 bg-[#d97706]/10 animate-pulse"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#6E1F1F] via-transparent to-transparent z-10"></div>
+                    <div className="absolute inset-0 bg-[#C9A227]/10 animate-pulse"></div>
                     <img
                       src={deities[selectedDeity].image}
                       alt={deities[selectedDeity].name}
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute bottom-0 left-0 right-0 p-6 z-20 text-white">
-                      <Badge className="bg-[#fbbf24] text-[#78350f] mb-3">
+                      <Badge className="bg-[#D4B870] text-[#6E1F1F] mb-3">
                         {deities[selectedDeity].title}
                       </Badge>
                       <h2 className="font-heading text-3xl mb-2">{deities[selectedDeity].name}</h2>
@@ -148,26 +148,26 @@ export function DeitiesPage() {
                   <CardContent className="p-8">
                     {/* Significance */}
                     <div className="mb-6">
-                      <h3 className="font-heading text-xl text-[#78350f] mb-3 flex items-center">
-                        <Sparkles className="w-5 h-5 mr-2 text-[#d97706]" />
+                      <h3 className="font-heading text-xl text-[#6E1F1F] mb-3 flex items-center">
+                        <Sparkles className="w-5 h-5 mr-2 text-[#C9A227]" />
                         Spiritual Significance
                       </h3>
-                      <p className="text-[#78716c] leading-relaxed">
+                      <p className="text-[#666666] leading-relaxed">
                         {deities[selectedDeity].significance}
                       </p>
                     </div>
 
                     {/* Expandable Sections */}
                     <Accordion type="single" collapsible className="space-y-2">
-                      <AccordionItem value="offerings" className="border-[#d97706]/20">
-                        <AccordionTrigger className="text-[#78350f] font-heading hover:text-[#d97706]">
+                      <AccordionItem value="offerings" className="border-[#C9A227]/20">
+                        <AccordionTrigger className="text-[#6E1F1F] font-heading hover:text-[#C9A227]">
                           Special Offerings
                         </AccordionTrigger>
                         <AccordionContent>
                           <ul className="grid grid-cols-2 gap-2 mt-2">
                             {deities[selectedDeity].offerings.map((offering) => (
-                              <li key={offering} className="flex items-center space-x-2 text-[#78716c]">
-                                <div className="w-1.5 h-1.5 rounded-full bg-[#d97706]"></div>
+                              <li key={offering} className="flex items-center space-x-2 text-[#666666]">
+                                <div className="w-1.5 h-1.5 rounded-full bg-[#C9A227]"></div>
                                 <span>{offering}</span>
                               </li>
                             ))}
@@ -175,37 +175,37 @@ export function DeitiesPage() {
                         </AccordionContent>
                       </AccordionItem>
 
-                      <AccordionItem value="festivals" className="border-[#d97706]/20">
-                        <AccordionTrigger className="text-[#78350f] font-heading hover:text-[#d97706]">
+                      <AccordionItem value="festivals" className="border-[#C9A227]/20">
+                        <AccordionTrigger className="text-[#6E1F1F] font-heading hover:text-[#C9A227]">
                           <div className="flex items-center">
-                            <Calendar className="w-4 h-4 mr-2 text-[#d97706]" />
+                            <Calendar className="w-4 h-4 mr-2 text-[#C9A227]" />
                             Festival Dates
                           </div>
                         </AccordionTrigger>
                         <AccordionContent>
                           <div className="space-y-2 mt-2">
                             {deities[selectedDeity].festivals.map((festival) => (
-                              <div key={festival} className="p-3 bg-[#fef3e2] rounded-lg">
-                                <p className="text-[#78350f]">{festival}</p>
+                              <div key={festival} className="p-3 bg-[#FAF6EE] rounded-lg">
+                                <p className="text-[#6E1F1F]">{festival}</p>
                               </div>
                             ))}
                           </div>
                         </AccordionContent>
                       </AccordionItem>
 
-                      <AccordionItem value="mantra" className="border-[#d97706]/20">
-                        <AccordionTrigger className="text-[#78350f] font-heading hover:text-[#d97706]">
+                      <AccordionItem value="mantra" className="border-[#C9A227]/20">
+                        <AccordionTrigger className="text-[#6E1F1F] font-heading hover:text-[#C9A227]">
                           <div className="flex items-center">
-                            <Book className="w-4 h-4 mr-2 text-[#d97706]" />
+                            <Book className="w-4 h-4 mr-2 text-[#C9A227]" />
                             Sacred Mantra
                           </div>
                         </AccordionTrigger>
                         <AccordionContent>
-                          <div className="mt-2 p-6 bg-gradient-to-br from-[#fef3e2] to-[#fbbf24]/10 rounded-lg text-center border border-[#d97706]/20">
-                            <p className="font-display text-2xl text-[#d97706] mb-2">
+                          <div className="mt-2 p-6 bg-gradient-to-br from-[#FAF6EE] to-[#D4B870]/10 rounded-lg text-center border border-[#C9A227]/20">
+                            <p className="font-display text-2xl text-[#C9A227] mb-2">
                               {deities[selectedDeity].mantra}
                             </p>
-                            <p className="text-sm text-[#78716c]">
+                            <p className="text-sm text-[#666666]">
                               Chant this mantra 108 times for divine blessings
                             </p>
                           </div>
@@ -221,25 +221,25 @@ export function DeitiesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-[#fef3e2] to-[#fbbf24]/20">
+      <section className="py-16 bg-gradient-to-r from-[#FAF6EE] to-[#D4B870]/20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Sparkles className="w-16 h-16 text-[#d97706] mx-auto mb-6" />
-          <h2 className="font-heading text-3xl md:text-4xl text-[#78350f] mb-4">
+          <Sparkles className="w-16 h-16 text-[#C9A227] mx-auto mb-6" />
+          <h2 className="font-heading text-3xl md:text-4xl text-[#6E1F1F] mb-4">
             Receive Divine Blessings
           </h2>
-          <p className="text-[#78716c] text-lg mb-8">
+          <p className="text-[#666666] text-lg mb-8">
             Book a special pooja or abhishekam for your chosen deity
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/pooja-booking"
-              className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-[#d97706] text-white hover:bg-[#f59e0b] transition-colors"
+              className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-[#C9A227] text-white hover:bg-[#D4B870] transition-colors"
             >
               Book Pooja Now
             </a>
             <a
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-3 rounded-lg border border-[#d97706] text-[#d97706] hover:bg-[#fef3e2] transition-colors"
+              className="inline-flex items-center justify-center px-8 py-3 rounded-lg border border-[#C9A227] text-[#C9A227] hover:bg-[#FAF6EE] transition-colors"
             >
               Contact Priest
             </a>
@@ -249,3 +249,4 @@ export function DeitiesPage() {
     </div>
   );
 }
+

@@ -9,12 +9,12 @@ import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Instagram, Youtube } fro
 export function ContactPage() {
   return (
     <div className="min-h-screen bg-[#faf8f5]">
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#78350f] to-[#92400e]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
-            <Phone className="w-16 h-16 text-[#fbbf24] mx-auto mb-4" />
+            <Phone className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
             <h1 className="font-heading text-4xl md:text-6xl text-white mb-4">Contact Us</h1>
-            <p className="text-xl text-[#fbbf24]">We're Here to Help</p>
+            <p className="text-xl text-[#D4B870]">We're Here to Help</p>
           </motion.div>
         </div>
       </section>
@@ -24,51 +24,51 @@ export function ContactPage() {
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Contact Info Cards */}
             <div className="space-y-6">
-              <Card className="border-[#d97706]/20">
+              <Card className="border-[#C9A227]/20">
                 <CardContent className="p-6">
-                  <MapPin className="w-10 h-10 text-[#d97706] mb-4" />
-                  <h3 className="font-heading text-lg text-[#78350f] mb-2">Address</h3>
-                  <p className="text-sm text-[#78716c]">
+                  <MapPin className="w-10 h-10 text-[#C9A227] mb-4" />
+                  <h3 className="font-heading text-lg text-[#6E1F1F] mb-2">Address</h3>
+                  <p className="text-sm text-[#666666]">
                     Temple Road, Sacred City<br />
                     Kerala, India - 695001
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-[#d97706]/20">
+              <Card className="border-[#C9A227]/20">
                 <CardContent className="p-6">
-                  <Phone className="w-10 h-10 text-[#d97706] mb-4" />
-                  <h3 className="font-heading text-lg text-[#78350f] mb-2">Phone</h3>
-                  <p className="text-sm text-[#78716c]">
+                  <Phone className="w-10 h-10 text-[#C9A227] mb-4" />
+                  <h3 className="font-heading text-lg text-[#6E1F1F] mb-2">Phone</h3>
+                  <p className="text-sm text-[#666666]">
                     Office: +91 9876543210<br />
                     Emergency: +91 9876543211
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-[#d97706]/20">
+              <Card className="border-[#C9A227]/20">
                 <CardContent className="p-6">
-                  <Mail className="w-10 h-10 text-[#d97706] mb-4" />
-                  <h3 className="font-heading text-lg text-[#78350f] mb-2">Email</h3>
-                  <p className="text-sm text-[#78716c]">
+                  <Mail className="w-10 h-10 text-[#C9A227] mb-4" />
+                  <h3 className="font-heading text-lg text-[#6E1F1F] mb-2">Email</h3>
+                  <p className="text-sm text-[#666666]">
                     info@mahadevtemple.org<br />
                     admin@mahadevtemple.org
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-[#d97706]/20">
+              <Card className="border-[#C9A227]/20">
                 <CardContent className="p-6">
-                  <Clock className="w-10 h-10 text-[#d97706] mb-4" />
-                  <h3 className="font-heading text-lg text-[#78350f] mb-2">Office Hours</h3>
-                  <p className="text-sm text-[#78716c]">
+                  <Clock className="w-10 h-10 text-[#C9A227] mb-4" />
+                  <h3 className="font-heading text-lg text-[#6E1F1F] mb-2">Office Hours</h3>
+                  <p className="text-sm text-[#666666]">
                     Mon - Sat: 9:00 AM - 6:00 PM<br />
                     Sunday: 9:00 AM - 1:00 PM
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-[#d97706]/20 bg-gradient-to-br from-[#78350f] to-[#92400e] text-white">
+              <Card className="border-[#C9A227]/20 bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F] text-white">
                 <CardContent className="p-6">
                   <h3 className="font-heading text-lg mb-4">Follow Us</h3>
                   <div className="flex gap-3">
@@ -91,9 +91,9 @@ export function ContactPage() {
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <Card className="border-[#d97706]/20">
+              <Card className="border-[#C9A227]/20">
                 <CardContent className="p-8">
-                  <h2 className="font-heading text-2xl text-[#78350f] mb-6">Send us a Message</h2>
+                  <h2 className="font-heading text-2xl text-[#6E1F1F] mb-6">Send us a Message</h2>
                   <form className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2">
@@ -124,7 +124,7 @@ export function ContactPage() {
                         required
                       />
                     </div>
-                    <Button type="submit" className="bg-[#d97706] hover:bg-[#f59e0b]" size="lg">
+                    <Button type="submit" className="bg-[#C9A227] hover:bg-[#D4B870]" size="lg">
                       Send Message
                     </Button>
                   </form>
@@ -132,7 +132,7 @@ export function ContactPage() {
               </Card>
 
               {/* Map */}
-              <Card className="border-[#d97706]/20 mt-8 overflow-hidden">
+              <Card className="border-[#C9A227]/20 mt-8 overflow-hidden">
                 <CardContent className="p-0">
                   <div className="aspect-video w-full">
                     <iframe
@@ -155,3 +155,4 @@ export function ContactPage() {
     </div>
   );
 }
+

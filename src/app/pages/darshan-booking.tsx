@@ -32,15 +32,15 @@ export function DarshanBookingPage() {
   return (
     <div className="min-h-screen bg-[#faf8f5]">
       {/* Hero */}
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#78350f] to-[#92400e]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <Bell className="w-16 h-16 text-[#fbbf24] mx-auto mb-4" />
+            <Bell className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
             <h1 className="font-heading text-4xl md:text-6xl text-white mb-4">Darshan Booking</h1>
-            <p className="text-xl text-[#fbbf24]">Skip the Queue - Book Your Slot Online</p>
+            <p className="text-xl text-[#D4B870]">Skip the Queue - Book Your Slot Online</p>
           </motion.div>
         </div>
       </section>
@@ -52,30 +52,30 @@ export function DarshanBookingPage() {
             <Card
               className={`cursor-pointer transition-all border-2 ${
                 selectedQueue === "normal"
-                  ? "border-[#d97706] shadow-lg"
-                  : "border-[#d97706]/20 hover:shadow-md"
+                  ? "border-[#C9A227] shadow-lg"
+                  : "border-[#C9A227]/20 hover:shadow-md"
               }`}
               onClick={() => setSelectedQueue("normal")}
             >
               <CardContent className="p-8">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="font-heading text-2xl text-[#78350f] mb-2">Normal Queue</h3>
+                    <h3 className="font-heading text-2xl text-[#6E1F1F] mb-2">Normal Queue</h3>
                     <Badge className="bg-green-600">Free</Badge>
                   </div>
-                  <Users className="w-12 h-12 text-[#d97706]" />
+                  <Users className="w-12 h-12 text-[#C9A227]" />
                 </div>
-                <ul className="space-y-2 text-[#78716c]">
+                <ul className="space-y-2 text-[#666666]">
                   <li className="flex items-center">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#d97706] mr-2"></div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#C9A227] mr-2"></div>
                     General darshan access
                   </li>
                   <li className="flex items-center">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#d97706] mr-2"></div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#C9A227] mr-2"></div>
                     Average wait time: 30-45 mins
                   </li>
                   <li className="flex items-center">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#d97706] mr-2"></div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#C9A227] mr-2"></div>
                     Standard viewing time
                   </li>
                 </ul>
@@ -85,30 +85,30 @@ export function DarshanBookingPage() {
             <Card
               className={`cursor-pointer transition-all border-2 ${
                 selectedQueue === "vip"
-                  ? "border-[#d97706] shadow-lg"
-                  : "border-[#d97706]/20 hover:shadow-md"
+                  ? "border-[#C9A227] shadow-lg"
+                  : "border-[#C9A227]/20 hover:shadow-md"
               }`}
               onClick={() => setSelectedQueue("vip")}
             >
               <CardContent className="p-8">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="font-heading text-2xl text-[#78350f] mb-2">VIP Queue</h3>
-                    <Badge className="bg-[#d97706]">₹500</Badge>
+                    <h3 className="font-heading text-2xl text-[#6E1F1F] mb-2">VIP Queue</h3>
+                    <Badge className="bg-[#C9A227]">₹500</Badge>
                   </div>
-                  <TrendingUp className="w-12 h-12 text-[#d97706]" />
+                  <TrendingUp className="w-12 h-12 text-[#C9A227]" />
                 </div>
-                <ul className="space-y-2 text-[#78716c]">
+                <ul className="space-y-2 text-[#666666]">
                   <li className="flex items-center">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#d97706] mr-2"></div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#C9A227] mr-2"></div>
                     Priority darshan access
                   </li>
                   <li className="flex items-center">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#d97706] mr-2"></div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#C9A227] mr-2"></div>
                     Average wait time: 5-10 mins
                   </li>
                   <li className="flex items-center">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#d97706] mr-2"></div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#C9A227] mr-2"></div>
                     Extended viewing time + Prasadam
                   </li>
                 </ul>
@@ -118,21 +118,21 @@ export function DarshanBookingPage() {
 
           {/* Date & Time Selection */}
           <div className="grid lg:grid-cols-2 gap-8">
-            <Card className="border-[#d97706]/20">
+            <Card className="border-[#C9A227]/20">
               <CardContent className="p-6">
-                <h3 className="font-heading text-xl text-[#78350f] mb-4">Select Date</h3>
+                <h3 className="font-heading text-xl text-[#6E1F1F] mb-4">Select Date</h3>
                 <Calendar
                   mode="single"
                   selected={selectedDate}
                   onSelect={setSelectedDate}
-                  className="rounded-md border border-[#d97706]/20"
+                  className="rounded-md border border-[#C9A227]/20"
                   disabled={(date) => date < new Date()}
                 />
               </CardContent>
             </Card>
 
             <div className="space-y-4">
-              <h3 className="font-heading text-xl text-[#78350f] mb-4">Available Time Slots</h3>
+              <h3 className="font-heading text-xl text-[#6E1F1F] mb-4">Available Time Slots</h3>
               {timeSlots.map((slot, index) => (
                 <motion.div
                   key={slot.time}
@@ -140,14 +140,14 @@ export function DarshanBookingPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.05 }}
                 >
-                  <Card className="border-[#d97706]/20 hover:shadow-md transition-shadow cursor-pointer">
+                  <Card className="border-[#C9A227]/20 hover:shadow-md transition-shadow cursor-pointer">
                     <CardContent className="p-4">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-4">
-                          <Clock className="w-5 h-5 text-[#d97706]" />
+                          <Clock className="w-5 h-5 text-[#C9A227]" />
                           <div>
-                            <p className="text-[#78350f]">{slot.time}</p>
-                            <p className="text-sm text-[#78716c]">
+                            <p className="text-[#6E1F1F]">{slot.time}</p>
+                            <p className="text-sm text-[#666666]">
                               {slot.available} slots available
                             </p>
                           </div>
@@ -158,7 +158,7 @@ export function DarshanBookingPage() {
                           </Badge>
                           <Button
                             size="sm"
-                            className="bg-[#d97706] hover:bg-[#f59e0b]"
+                            className="bg-[#C9A227] hover:bg-[#D4B870]"
                             disabled={slot.available === 0}
                           >
                             Book
@@ -176,3 +176,4 @@ export function DarshanBookingPage() {
     </div>
   );
 }
+

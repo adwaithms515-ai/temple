@@ -69,32 +69,32 @@ export function PoojaBookingPage() {
           animate={{ opacity: 1, scale: 1 }}
           className="max-w-2xl w-full"
         >
-          <Card className="border-[#d97706]/20 shadow-2xl">
+          <Card className="border-[#C9A227]/20 shadow-2xl">
             <CardContent className="p-12 text-center">
               <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
                 <CheckCircle2 className="w-12 h-12 text-green-600" />
               </div>
-              <h2 className="font-heading text-3xl text-[#78350f] mb-4">Booking Confirmed!</h2>
-              <p className="text-[#78716c] mb-6">
+              <h2 className="font-heading text-3xl text-[#6E1F1F] mb-4">Booking Confirmed!</h2>
+              <p className="text-[#666666] mb-6">
                 Your pooja has been successfully booked. You will receive a confirmation email with booking details and QR code.
               </p>
-              <div className="bg-[#fef3e2] rounded-lg p-6 mb-6">
+              <div className="bg-[#FAF6EE] rounded-lg p-6 mb-6">
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div className="text-left">
-                    <p className="text-[#78716c] mb-1">Booking ID</p>
-                    <p className="text-[#78350f] font-medium">BK-{Math.random().toString(36).substr(2, 9).toUpperCase()}</p>
+                    <p className="text-[#666666] mb-1">Booking ID</p>
+                    <p className="text-[#6E1F1F] font-medium">BK-{Math.random().toString(36).substr(2, 9).toUpperCase()}</p>
                   </div>
                   <div className="text-left">
-                    <p className="text-[#78716c] mb-1">Date</p>
-                    <p className="text-[#78350f] font-medium">{selectedDate ? format(selectedDate, "PPP") : "Not selected"}</p>
+                    <p className="text-[#666666] mb-1">Date</p>
+                    <p className="text-[#6E1F1F] font-medium">{selectedDate ? format(selectedDate, "PPP") : "Not selected"}</p>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button onClick={() => setBookingComplete(false)} className="bg-[#d97706] hover:bg-[#f59e0b]">
+                <Button onClick={() => setBookingComplete(false)} className="bg-[#C9A227] hover:bg-[#D4B870]">
                   Book Another Pooja
                 </Button>
-                <Button variant="outline" className="border-[#d97706] text-[#d97706]">
+                <Button variant="outline" className="border-[#C9A227] text-[#C9A227]">
                   Download Receipt
                 </Button>
               </div>
@@ -108,22 +108,22 @@ export function PoojaBookingPage() {
   return (
     <div className="min-h-screen bg-[#faf8f5]">
       {/* Hero Section */}
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#78350f] to-[#92400e]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-4xl"
           >
-            <Sparkles className="w-16 h-16 text-[#fbbf24] mx-auto mb-4" />
+            <Sparkles className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
             <h1 className="font-heading text-4xl md:text-6xl text-white mb-4">Pooja Booking</h1>
-            <p className="text-xl text-[#fbbf24]">Book Your Sacred Rituals Online</p>
+            <p className="text-xl text-[#D4B870]">Book Your Sacred Rituals Online</p>
           </motion.div>
         </div>
       </section>
 
       {/* Booking Progress */}
-      <section className="py-8 bg-white border-b border-[#d97706]/10">
+      <section className="py-8 bg-white border-b border-[#C9A227]/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {[
@@ -135,16 +135,16 @@ export function PoojaBookingPage() {
               <div key={s.num} className="flex items-center">
                 <div className="flex flex-col items-center">
                   <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors ${
-                    step >= s.num ? "bg-[#d97706] text-white" : "bg-gray-200 text-gray-500"
+                    step >= s.num ? "bg-[#C9A227] text-white" : "bg-gray-200 text-gray-500"
                   }`}>
                     {s.num}
                   </div>
-                  <p className={`text-xs mt-2 hidden sm:block ${step >= s.num ? "text-[#d97706]" : "text-gray-500"}`}>
+                  <p className={`text-xs mt-2 hidden sm:block ${step >= s.num ? "text-[#C9A227]" : "text-gray-500"}`}>
                     {s.label}
                   </p>
                 </div>
                 {idx < 3 && (
-                  <div className={`w-12 sm:w-24 h-1 mx-2 ${step > s.num ? "bg-[#d97706]" : "bg-gray-200"}`}></div>
+                  <div className={`w-12 sm:w-24 h-1 mx-2 ${step > s.num ? "bg-[#C9A227]" : "bg-gray-200"}`}></div>
                 )}
               </div>
             ))}
@@ -162,29 +162,29 @@ export function PoojaBookingPage() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
               >
-                <h2 className="font-heading text-2xl text-[#78350f] mb-6">Select Pooja Type</h2>
+                <h2 className="font-heading text-2xl text-[#6E1F1F] mb-6">Select Pooja Type</h2>
                 <div className="space-y-8">
                   {poojaCategories.map((category) => (
                     <div key={category.id}>
-                      <h3 className="font-heading text-xl text-[#d97706] mb-4">{category.name}</h3>
+                      <h3 className="font-heading text-xl text-[#C9A227] mb-4">{category.name}</h3>
                       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                         {category.items.map((item) => (
                           <Card
                             key={item.id}
                             className={`cursor-pointer transition-all ${
                               selectedPooja === item.id
-                                ? "border-[#d97706] shadow-lg bg-gradient-to-br from-[#fef3e2] to-white"
-                                : "border-[#d97706]/20 hover:shadow-md"
+                                ? "border-[#C9A227] shadow-lg bg-gradient-to-br from-[#FAF6EE] to-white"
+                                : "border-[#C9A227]/20 hover:shadow-md"
                             }`}
                             onClick={() => setSelectedPooja(item.id)}
                           >
                             <CardContent className="p-6">
                               <div className="flex items-start justify-between mb-3">
-                                <h4 className="font-heading text-lg text-[#78350f]">{item.name}</h4>
-                                <Badge className="bg-[#d97706]">{item.price}</Badge>
+                                <h4 className="font-heading text-lg text-[#6E1F1F]">{item.name}</h4>
+                                <Badge className="bg-[#C9A227]">{item.price}</Badge>
                               </div>
-                              <p className="text-sm text-[#78716c] mb-3">{item.description}</p>
-                              <div className="flex items-center text-xs text-[#d97706]">
+                              <p className="text-sm text-[#666666] mb-3">{item.description}</p>
+                              <div className="flex items-center text-xs text-[#C9A227]">
                                 <Clock className="w-3 h-3 mr-1" />
                                 {item.duration}
                               </div>
@@ -200,7 +200,7 @@ export function PoojaBookingPage() {
                     type="button"
                     onClick={() => setStep(2)}
                     disabled={!selectedPooja}
-                    className="bg-[#d97706] hover:bg-[#f59e0b]"
+                    className="bg-[#C9A227] hover:bg-[#D4B870]"
                   >
                     Continue to Date Selection
                   </Button>
@@ -214,26 +214,26 @@ export function PoojaBookingPage() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
               >
-                <h2 className="font-heading text-2xl text-[#78350f] mb-6">Choose Date & Time</h2>
+                <h2 className="font-heading text-2xl text-[#6E1F1F] mb-6">Choose Date & Time</h2>
                 <div className="grid md:grid-cols-2 gap-8">
-                  <Card className="border-[#d97706]/20">
+                  <Card className="border-[#C9A227]/20">
                     <CardHeader>
-                      <CardTitle className="font-heading text-[#78350f]">Select Date</CardTitle>
+                      <CardTitle className="font-heading text-[#6E1F1F]">Select Date</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <Calendar
                         mode="single"
                         selected={selectedDate}
                         onSelect={setSelectedDate}
-                        className="rounded-md border border-[#d97706]/20"
+                        className="rounded-md border border-[#C9A227]/20"
                         disabled={(date) => date < new Date()}
                       />
                     </CardContent>
                   </Card>
 
-                  <Card className="border-[#d97706]/20">
+                  <Card className="border-[#C9A227]/20">
                     <CardHeader>
-                      <CardTitle className="font-heading text-[#78350f]">Available Time Slots</CardTitle>
+                      <CardTitle className="font-heading text-[#6E1F1F]">Available Time Slots</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <RadioGroup defaultValue="morning">
@@ -248,14 +248,14 @@ export function PoojaBookingPage() {
                               key={slot.value}
                               className={`flex items-center space-x-3 p-4 rounded-lg border ${
                                 slot.available
-                                  ? "border-[#d97706]/20 hover:bg-[#fef3e2]/50"
+                                  ? "border-[#C9A227]/20 hover:bg-[#FAF6EE]/50"
                                   : "border-gray-200 bg-gray-50"
                               }`}
                             >
                               <RadioGroupItem value={slot.value} disabled={!slot.available} />
                               <div className="flex-1">
-                                <p className="font-medium text-[#78350f]">{slot.label}</p>
-                                <p className="text-sm text-[#78716c]">{slot.time}</p>
+                                <p className="font-medium text-[#6E1F1F]">{slot.label}</p>
+                                <p className="text-sm text-[#666666]">{slot.time}</p>
                               </div>
                               {!slot.available && (
                                 <Badge variant="outline" className="text-xs">Booked</Badge>
@@ -275,7 +275,7 @@ export function PoojaBookingPage() {
                     type="button"
                     onClick={() => setStep(3)}
                     disabled={!selectedDate}
-                    className="bg-[#d97706] hover:bg-[#f59e0b]"
+                    className="bg-[#C9A227] hover:bg-[#D4B870]"
                   >
                     Continue to Details
                   </Button>
@@ -289,8 +289,8 @@ export function PoojaBookingPage() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
               >
-                <h2 className="font-heading text-2xl text-[#78350f] mb-6">Devotee Details</h2>
-                <Card className="border-[#d97706]/20">
+                <h2 className="font-heading text-2xl text-[#6E1F1F] mb-6">Devotee Details</h2>
+                <Card className="border-[#C9A227]/20">
                   <CardContent className="p-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2">
@@ -350,7 +350,7 @@ export function PoojaBookingPage() {
                   <Button
                     type="button"
                     onClick={() => setStep(4)}
-                    className="bg-[#d97706] hover:bg-[#f59e0b]"
+                    className="bg-[#C9A227] hover:bg-[#D4B870]"
                   >
                     Continue to Payment
                   </Button>
@@ -364,35 +364,35 @@ export function PoojaBookingPage() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
               >
-                <h2 className="font-heading text-2xl text-[#78350f] mb-6">Payment</h2>
+                <h2 className="font-heading text-2xl text-[#6E1F1F] mb-6">Payment</h2>
                 <div className="grid lg:grid-cols-3 gap-8">
                   <div className="lg:col-span-2">
-                    <Card className="border-[#d97706]/20">
+                    <Card className="border-[#C9A227]/20">
                       <CardHeader>
-                        <CardTitle className="font-heading text-[#78350f]">Payment Method</CardTitle>
+                        <CardTitle className="font-heading text-[#6E1F1F]">Payment Method</CardTitle>
                       </CardHeader>
                       <CardContent>
                         <RadioGroup defaultValue="upi">
                           <div className="space-y-3">
-                            <div className="flex items-center space-x-3 p-4 rounded-lg border border-[#d97706]/20 hover:bg-[#fef3e2]/50">
+                            <div className="flex items-center space-x-3 p-4 rounded-lg border border-[#C9A227]/20 hover:bg-[#FAF6EE]/50">
                               <RadioGroupItem value="upi" />
                               <div className="flex-1">
-                                <p className="font-medium text-[#78350f]">UPI Payment</p>
-                                <p className="text-sm text-[#78716c]">Google Pay, PhonePe, Paytm</p>
+                                <p className="font-medium text-[#6E1F1F]">UPI Payment</p>
+                                <p className="text-sm text-[#666666]">Google Pay, PhonePe, Paytm</p>
                               </div>
                             </div>
-                            <div className="flex items-center space-x-3 p-4 rounded-lg border border-[#d97706]/20 hover:bg-[#fef3e2]/50">
+                            <div className="flex items-center space-x-3 p-4 rounded-lg border border-[#C9A227]/20 hover:bg-[#FAF6EE]/50">
                               <RadioGroupItem value="card" />
                               <div className="flex-1">
-                                <p className="font-medium text-[#78350f]">Credit/Debit Card</p>
-                                <p className="text-sm text-[#78716c]">Visa, Mastercard, Rupay</p>
+                                <p className="font-medium text-[#6E1F1F]">Credit/Debit Card</p>
+                                <p className="text-sm text-[#666666]">Visa, Mastercard, Rupay</p>
                               </div>
                             </div>
-                            <div className="flex items-center space-x-3 p-4 rounded-lg border border-[#d97706]/20 hover:bg-[#fef3e2]/50">
+                            <div className="flex items-center space-x-3 p-4 rounded-lg border border-[#C9A227]/20 hover:bg-[#FAF6EE]/50">
                               <RadioGroupItem value="netbanking" />
                               <div className="flex-1">
-                                <p className="font-medium text-[#78350f]">Net Banking</p>
-                                <p className="text-sm text-[#78716c]">All major banks supported</p>
+                                <p className="font-medium text-[#6E1F1F]">Net Banking</p>
+                                <p className="text-sm text-[#666666]">All major banks supported</p>
                               </div>
                             </div>
                           </div>
@@ -402,36 +402,36 @@ export function PoojaBookingPage() {
                   </div>
 
                   <div>
-                    <Card className="border-[#d97706]/20 sticky top-24">
+                    <Card className="border-[#C9A227]/20 sticky top-24">
                       <CardHeader>
-                        <CardTitle className="font-heading text-[#78350f]">Booking Summary</CardTitle>
+                        <CardTitle className="font-heading text-[#6E1F1F]">Booking Summary</CardTitle>
                       </CardHeader>
                       <CardContent>
                         <div className="space-y-4">
                           <div>
-                            <p className="text-sm text-[#78716c]">Pooja Type</p>
-                            <p className="text-[#78350f]">Rudrabhishek</p>
+                            <p className="text-sm text-[#666666]">Pooja Type</p>
+                            <p className="text-[#6E1F1F]">Rudrabhishek</p>
                           </div>
                           <div>
-                            <p className="text-sm text-[#78716c]">Date</p>
-                            <p className="text-[#78350f]">{selectedDate ? format(selectedDate, "PPP") : "Not selected"}</p>
+                            <p className="text-sm text-[#666666]">Date</p>
+                            <p className="text-[#6E1F1F]">{selectedDate ? format(selectedDate, "PPP") : "Not selected"}</p>
                           </div>
                           <div>
-                            <p className="text-sm text-[#78716c]">Time</p>
-                            <p className="text-[#78350f]">8:00 AM - 11:00 AM</p>
+                            <p className="text-sm text-[#666666]">Time</p>
+                            <p className="text-[#6E1F1F]">8:00 AM - 11:00 AM</p>
                           </div>
-                          <div className="border-t border-[#d97706]/20 pt-4">
+                          <div className="border-t border-[#C9A227]/20 pt-4">
                             <div className="flex justify-between mb-2">
-                              <span className="text-[#78716c]">Pooja Amount</span>
-                              <span className="text-[#78350f]">₹501</span>
+                              <span className="text-[#666666]">Pooja Amount</span>
+                              <span className="text-[#6E1F1F]">₹501</span>
                             </div>
                             <div className="flex justify-between mb-2">
-                              <span className="text-[#78716c]">Prasadam</span>
-                              <span className="text-[#78350f]">₹100</span>
+                              <span className="text-[#666666]">Prasadam</span>
+                              <span className="text-[#6E1F1F]">₹100</span>
                             </div>
-                            <div className="flex justify-between pt-2 border-t border-[#d97706]/20">
-                              <span className="text-lg text-[#78350f]">Total</span>
-                              <span className="text-lg text-[#d97706]">₹601</span>
+                            <div className="flex justify-between pt-2 border-t border-[#C9A227]/20">
+                              <span className="text-lg text-[#6E1F1F]">Total</span>
+                              <span className="text-lg text-[#C9A227]">₹601</span>
                             </div>
                           </div>
                         </div>
@@ -443,7 +443,7 @@ export function PoojaBookingPage() {
                   <Button type="button" variant="outline" onClick={() => setStep(3)}>
                     Back
                   </Button>
-                  <Button type="submit" className="bg-[#d97706] hover:bg-[#f59e0b]">
+                  <Button type="submit" className="bg-[#C9A227] hover:bg-[#D4B870]">
                     <CreditCard className="w-4 h-4 mr-2" />
                     Complete Payment
                   </Button>
@@ -456,3 +456,4 @@ export function PoojaBookingPage() {
     </div>
   );
 }
+

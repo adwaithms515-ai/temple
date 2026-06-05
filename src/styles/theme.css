@@ -2,47 +2,47 @@
 
 :root {
   --font-size: 16px;
-  --background: #fffaf0; /* Warm temple cream */
-  --foreground: #5c1616; /* Deep maroon/crimson */
-  --card: #ffffff;
-  --card-foreground: #5c1616;
-  --popover: #ffffff;
-  --popover-foreground: #5c1616;
-  --primary: #e65100; /* Vibrant saffron/orange */
-  --primary-foreground: #ffffff;
-  --secondary: #d32f2f; /* Deep temple red */
-  --secondary-foreground: #ffffff;
-  --muted: #fcedd8; /* Soft sand */
-  --muted-foreground: #8a6c62;
-  --accent: #ffb300; /* Marigold gold */
-  --accent-foreground: #5c1616;
-  --destructive: #dc2626;
-  --destructive-foreground: #ffffff;
-  --border: rgba(230, 81, 0, 0.2);
+  --background: #FAF6EE; /* sandalwood */
+  --foreground: #2B2B2B; /* charcoal */
+  --card: #FFFFFF;
+  --card-foreground: #2B2B2B;
+  --popover: #FFFFFF;
+  --popover-foreground: #2B2B2B;
+  --primary: #C9A227; /* butter-gold */
+  --primary-foreground: #FFFFFF;
+  --secondary: #6E1F1F; /* temple-maroon */
+  --secondary-foreground: #FFFFFF;
+  --muted: #fcedd8; 
+  --muted-foreground: #666666; /* text-muted */
+  --accent: #D4B870; /* brass-gold */
+  --accent-foreground: #6E1F1F;
+  --destructive: #B83227; /* vermillion */
+  --destructive-foreground: #FFFFFF;
+  --border: rgba(201, 162, 39, 0.2);
   --input: transparent;
   --input-background: #fff2d9;
   --switch-background: #e7dccf;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: #e65100;
-  --chart-1: #d97706;
-  --chart-2: #f59e0b;
-  --chart-3: #fbbf24;
-  --chart-4: #78350f;
-  --chart-5: #92400e;
-  --radius: 0.75rem;
-  --sidebar: #fef3e2;
-  --sidebar-foreground: #2d1810;
-  --sidebar-primary: #d97706;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #fef3e2;
-  --sidebar-accent-foreground: #2d1810;
-  --sidebar-border: rgba(217, 119, 6, 0.15);
-  --sidebar-ring: #d97706;
-  --spiritual-gold: #d97706;
-  --spiritual-saffron: #f59e0b;
-  --spiritual-light: #fef3e2;
-  --spiritual-dark: #78350f;
+  --ring: #C9A227;
+  --chart-1: #C9A227;
+  --chart-2: #D4B870;
+  --chart-3: #6E1F1F;
+  --chart-4: #3A6B3A; /* tulasi-green */
+  --chart-5: #B83227;
+  --radius: 12px;
+  --sidebar: #FAF6EE;
+  --sidebar-foreground: #2B2B2B;
+  --sidebar-primary: #C9A227;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #FFFFFF;
+  --sidebar-accent-foreground: #2B2B2B;
+  --sidebar-border: rgba(201, 162, 39, 0.15);
+  --sidebar-ring: #C9A227;
+  --spiritual-gold: #C9A227;
+  --spiritual-saffron: #D4B870;
+  --spiritual-light: #FAF6EE;
+  --spiritual-dark: #6E1F1F;
 }
 
 .dark {
@@ -121,6 +121,10 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Cormorant Garamond", serif;
+  --font-malayalam: "Noto Sans Malayalam", sans-serif;
+  --font-malayalam-heading: "Anek Malayalam", sans-serif;
 }
 
 @layer base {

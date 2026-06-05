@@ -22,12 +22,12 @@ export function GalleryPage() {
 
   return (
     <div className="min-h-screen bg-[#faf8f5]">
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#78350f] to-[#92400e]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
-            <Camera className="w-16 h-16 text-[#fbbf24] mx-auto mb-4" />
+            <Camera className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
             <h1 className="font-heading text-4xl md:text-6xl text-white mb-4">Temple Gallery</h1>
-            <p className="text-xl text-[#fbbf24]">Visual Journey of Divine Moments</p>
+            <p className="text-xl text-[#D4B870]">Visual Journey of Divine Moments</p>
           </motion.div>
         </div>
       </section>
@@ -57,7 +57,7 @@ export function GalleryPage() {
                     className="cursor-pointer group"
                     onClick={() => setSelectedImage(img)}
                   >
-                    <Card className="overflow-hidden border-[#d97706]/20 hover:shadow-xl transition-shadow">
+                    <Card className="overflow-hidden border-[#C9A227]/20 hover:shadow-xl transition-shadow">
                       <img
                         src={img}
                         alt={`Temple ${index + 1}`}
@@ -72,13 +72,13 @@ export function GalleryPage() {
             <TabsContent value="videos">
               <div className="grid md:grid-cols-2 gap-6">
                 {[1, 2, 3, 4].map((i) => (
-                  <Card key={i} className="border-[#d97706]/20 overflow-hidden hover:shadow-lg transition-shadow">
-                    <div className="relative aspect-video bg-[#fef3e2] flex items-center justify-center">
-                      <Video className="w-16 h-16 text-[#d97706]" />
+                  <Card key={i} className="border-[#C9A227]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                    <div className="relative aspect-video bg-[#FAF6EE] flex items-center justify-center">
+                      <Video className="w-16 h-16 text-[#C9A227]" />
                     </div>
                     <div className="p-4">
-                      <h3 className="font-heading text-[#78350f] mb-1">Festival Celebration {i}</h3>
-                      <p className="text-sm text-[#78716c]">Duration: 5:30</p>
+                      <h3 className="font-heading text-[#6E1F1F] mb-1">Festival Celebration {i}</h3>
+                      <p className="text-sm text-[#666666]">Duration: 5:30</p>
                     </div>
                   </Card>
                 ))}
@@ -100,3 +100,4 @@ export function GalleryPage() {
     </div>
   );
 }
+

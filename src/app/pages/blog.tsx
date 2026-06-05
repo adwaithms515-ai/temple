@@ -13,12 +13,12 @@ export function BlogPage() {
 
   return (
     <div className="min-h-screen bg-[#faf8f5]">
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#78350f] to-[#92400e]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
-            <BookOpen className="w-16 h-16 text-[#fbbf24] mx-auto mb-4" />
+            <BookOpen className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
             <h1 className="font-heading text-4xl md:text-6xl text-white mb-4">Spiritual Blog</h1>
-            <p className="text-xl text-[#fbbf24]">Wisdom & Stories from Our Temple</p>
+            <p className="text-xl text-[#D4B870]">Wisdom & Stories from Our Temple</p>
           </motion.div>
         </div>
       </section>
@@ -34,21 +34,21 @@ export function BlogPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="border-[#d97706]/20 hover:shadow-lg transition-shadow cursor-pointer">
+                <Card className="border-[#C9A227]/20 hover:shadow-lg transition-shadow cursor-pointer">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-3 mb-3">
-                      <Badge className="bg-[#fef3e2] text-[#d97706]">{article.category}</Badge>
-                      <div className="flex items-center text-sm text-[#78716c]">
+                      <Badge className="bg-[#FAF6EE] text-[#C9A227]">{article.category}</Badge>
+                      <div className="flex items-center text-sm text-[#666666]">
                         <Calendar className="w-3 h-3 mr-1" />
                         {article.date}
                       </div>
-                      <div className="flex items-center text-sm text-[#78716c]">
+                      <div className="flex items-center text-sm text-[#666666]">
                         <User className="w-3 h-3 mr-1" />
                         {article.author}
                       </div>
                     </div>
-                    <h3 className="font-heading text-2xl text-[#78350f] mb-2">{article.title}</h3>
-                    <p className="text-[#78716c]">{article.excerpt}</p>
+                    <h3 className="font-heading text-2xl text-[#6E1F1F] mb-2">{article.title}</h3>
+                    <p className="text-[#666666]">{article.excerpt}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -59,3 +59,4 @@ export function BlogPage() {
     </div>
   );
 }
+

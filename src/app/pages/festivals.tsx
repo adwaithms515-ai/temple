@@ -55,7 +55,7 @@ export function FestivalsPage() {
             animate={{ opacity: 1, y: 0 }}
           >
             <h1 className="font-heading text-4xl md:text-6xl text-white mb-4">Festivals & Events</h1>
-            <p className="text-xl text-[#fbbf24]">Celebrate Divine Occasions with Us</p>
+            <p className="text-xl text-[#D4B870]">Celebrate Divine Occasions with Us</p>
           </motion.div>
         </div>
       </section>
@@ -63,7 +63,7 @@ export function FestivalsPage() {
       {/* Upcoming Festivals */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-heading text-3xl text-[#78350f] mb-8">Upcoming Festivals</h2>
+          <h2 className="font-heading text-3xl text-[#6E1F1F] mb-8">Upcoming Festivals</h2>
           <div className="space-y-8">
             {upcomingFestivals.map((festival, index) => (
               <motion.div
@@ -73,28 +73,28 @@ export function FestivalsPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="border-[#d97706]/20 overflow-hidden hover:shadow-xl transition-shadow">
+                <Card className="border-[#C9A227]/20 overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="grid md:grid-cols-3 gap-6">
                     <div className="relative h-64 md:h-auto">
                       <img src={festival.image} alt={festival.name} className="w-full h-full object-cover" />
                       <div className="absolute top-4 right-4">
-                        <Badge className="bg-[#d97706]">{festival.daysLeft} days left</Badge>
+                        <Badge className="bg-[#C9A227]">{festival.daysLeft} days left</Badge>
                       </div>
                     </div>
                     <div className="md:col-span-2 p-6">
-                      <h3 className="font-heading text-2xl text-[#78350f] mb-2">{festival.name}</h3>
-                      <div className="flex items-center space-x-4 text-[#78716c] mb-4">
+                      <h3 className="font-heading text-2xl text-[#6E1F1F] mb-2">{festival.name}</h3>
+                      <div className="flex items-center space-x-4 text-[#666666] mb-4">
                         <div className="flex items-center">
-                          <Calendar className="w-4 h-4 mr-2 text-[#d97706]" />
+                          <Calendar className="w-4 h-4 mr-2 text-[#C9A227]" />
                           {festival.date}
                         </div>
                       </div>
-                      <p className="text-[#78716c] mb-4">{festival.description}</p>
+                      <p className="text-[#666666] mb-4">{festival.description}</p>
                       <div className="space-y-2 mb-4">
-                        <h4 className="font-heading text-[#78350f]">Schedule</h4>
+                        <h4 className="font-heading text-[#6E1F1F]">Schedule</h4>
                         {festival.schedule.map((item, i) => (
-                          <div key={i} className="flex items-center text-sm text-[#78716c]">
-                            <Clock className="w-3 h-3 mr-2 text-[#d97706]" />
+                          <div key={i} className="flex items-center text-sm text-[#666666]">
+                            <Clock className="w-3 h-3 mr-2 text-[#C9A227]" />
                             {item}
                           </div>
                         ))}
@@ -102,14 +102,14 @@ export function FestivalsPage() {
                       <div className="flex gap-3">
                         <a
                           href="/live-streaming"
-                          className="inline-flex items-center px-4 py-2 rounded-lg bg-[#d97706] text-white hover:bg-[#f59e0b] transition-colors"
+                          className="inline-flex items-center px-4 py-2 rounded-lg bg-[#C9A227] text-white hover:bg-[#D4B870] transition-colors"
                         >
                           <Video className="w-4 h-4 mr-2" />
                           Watch Live
                         </a>
                         <a
                           href="/contact"
-                          className="inline-flex items-center px-4 py-2 rounded-lg border border-[#d97706] text-[#d97706] hover:bg-[#fef3e2] transition-colors"
+                          className="inline-flex items-center px-4 py-2 rounded-lg border border-[#C9A227] text-[#C9A227] hover:bg-[#FAF6EE] transition-colors"
                         >
                           Get Directions
                         </a>
@@ -126,14 +126,14 @@ export function FestivalsPage() {
       {/* Past Festivals */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-heading text-3xl text-[#78350f] mb-8">Past Celebrations</h2>
+          <h2 className="font-heading text-3xl text-[#6E1F1F] mb-8">Past Celebrations</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {pastFestivals.map((festival) => (
-              <Card key={festival.name} className="border-[#d97706]/20 hover:shadow-lg transition-shadow">
+              <Card key={festival.name} className="border-[#C9A227]/20 hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <h3 className="font-heading text-xl text-[#78350f] mb-2">{festival.name}</h3>
-                  <p className="text-sm text-[#78716c] mb-3">{festival.date}</p>
-                  <div className="flex items-center text-[#d97706]">
+                  <h3 className="font-heading text-xl text-[#6E1F1F] mb-2">{festival.name}</h3>
+                  <p className="text-sm text-[#666666] mb-3">{festival.date}</p>
+                  <div className="flex items-center text-[#C9A227]">
                     <MapPin className="w-4 h-4 mr-2" />
                     <span className="text-sm">{festival.attendees} devotees attended</span>
                   </div>
@@ -146,3 +146,4 @@ export function FestivalsPage() {
     </div>
   );
 }
+

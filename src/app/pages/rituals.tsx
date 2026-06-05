@@ -16,12 +16,12 @@ export function RitualsPage() {
 
   return (
     <div className="min-h-screen bg-[#faf8f5]">
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#78350f] to-[#92400e]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
-            <Bell className="w-16 h-16 text-[#fbbf24] mx-auto mb-4" />
+            <Bell className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
             <h1 className="font-heading text-4xl md:text-6xl text-white mb-4">Daily Rituals</h1>
-            <p className="text-xl text-[#fbbf24]">Temple Schedule & Timings</p>
+            <p className="text-xl text-[#D4B870]">Temple Schedule & Timings</p>
           </motion.div>
         </div>
       </section>
@@ -29,7 +29,7 @@ export function RitualsPage() {
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-[#d97706]/20"></div>
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-[#C9A227]/20"></div>
             <div className="space-y-8">
               {rituals.map((ritual, index) => (
                 <motion.div
@@ -40,16 +40,16 @@ export function RitualsPage() {
                   transition={{ delay: index * 0.1 }}
                   className="relative pl-20"
                 >
-                  <div className="absolute left-0 w-16 h-16 rounded-full bg-gradient-to-br from-[#d97706] to-[#f59e0b] flex items-center justify-center shadow-lg">
+                  <div className="absolute left-0 w-16 h-16 rounded-full bg-gradient-to-br from-[#C9A227] to-[#D4B870] flex items-center justify-center shadow-lg">
                     <ritual.icon className="w-8 h-8 text-white" />
                   </div>
-                  <Card className="border-[#d97706]/20 hover:shadow-lg transition-shadow">
+                  <Card className="border-[#C9A227]/20 hover:shadow-lg transition-shadow">
                     <CardContent className="p-6">
                       <div className="flex items-center justify-between mb-2">
-                        <h3 className="font-heading text-xl text-[#78350f]">{ritual.name}</h3>
-                        <span className="text-[#d97706] px-3 py-1 rounded-full bg-[#fef3e2]">{ritual.time}</span>
+                        <h3 className="font-heading text-xl text-[#6E1F1F]">{ritual.name}</h3>
+                        <span className="text-[#C9A227] px-3 py-1 rounded-full bg-[#FAF6EE]">{ritual.time}</span>
                       </div>
-                      <p className="text-[#78716c]">{ritual.description}</p>
+                      <p className="text-[#666666]">{ritual.description}</p>
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -61,3 +61,4 @@ export function RitualsPage() {
     </div>
   );
 }
+

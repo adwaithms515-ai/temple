@@ -39,7 +39,7 @@ export function AboutPage() {
             className="max-w-4xl"
           >
             <h1 className="font-heading text-4xl md:text-6xl text-white mb-4">About Our Temple</h1>
-            <p className="text-xl text-[#fbbf24]">A Legacy of Devotion Spanning Centuries</p>
+            <p className="text-xl text-[#D4B870]">A Legacy of Devotion Spanning Centuries</p>
           </motion.div>
         </div>
       </section>
@@ -56,11 +56,11 @@ export function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="border-[#d97706]/20 hover:shadow-lg transition-shadow">
+                <Card className="border-[#C9A227]/20 hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 text-center">
-                    <stat.icon className="w-10 h-10 text-[#d97706] mx-auto mb-3" />
-                    <p className="text-2xl md:text-3xl text-[#78350f] mb-1">{stat.value}</p>
-                    <p className="text-sm text-[#78716c]">{stat.label}</p>
+                    <stat.icon className="w-10 h-10 text-[#C9A227] mx-auto mb-3" />
+                    <p className="text-2xl md:text-3xl text-[#6E1F1F] mb-1">{stat.value}</p>
+                    <p className="text-sm text-[#666666]">{stat.label}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -78,8 +78,8 @@ export function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-heading text-3xl md:text-4xl text-[#78350f] mb-6">Temple History</h2>
-              <div className="space-y-4 text-[#78716c] leading-relaxed">
+              <h2 className="font-heading text-3xl md:text-4xl text-[#6E1F1F] mb-6">Temple History</h2>
+              <div className="space-y-4 text-[#666666] leading-relaxed">
                 <p>
                   Sri Mahadev Temple stands as a testament to centuries of unwavering faith and devotion. 
                   Founded in 850 CE by the revered sage Adi Shankaracharya, this sacred shrine has been 
@@ -114,7 +114,7 @@ export function AboutPage() {
 
           {/* Timeline */}
           <div className="mt-16">
-            <h3 className="font-heading text-2xl md:text-3xl text-[#78350f] mb-8 text-center">Historical Timeline</h3>
+            <h3 className="font-heading text-2xl md:text-3xl text-[#6E1F1F] mb-8 text-center">Historical Timeline</h3>
             <div className="space-y-8">
               {timeline.map((item, index) => (
                 <motion.div
@@ -124,17 +124,17 @@ export function AboutPage() {
                   viewport={{ once: true }}
                   className="relative"
                 >
-                  <Card className="border-[#d97706]/20 hover:shadow-lg transition-shadow">
+                  <Card className="border-[#C9A227]/20 hover:shadow-lg transition-shadow">
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
                         <div className="flex-shrink-0">
-                          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#d97706] to-[#f59e0b] flex items-center justify-center shadow-lg">
+                          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#C9A227] to-[#D4B870] flex items-center justify-center shadow-lg">
                             <span className="text-white text-sm font-heading">{item.year}</span>
                           </div>
                         </div>
                         <div className="flex-1">
-                          <h4 className="font-heading text-xl text-[#78350f] mb-2">{item.event}</h4>
-                          <p className="text-[#78716c]">{item.description}</p>
+                          <h4 className="font-heading text-xl text-[#6E1F1F] mb-2">{item.event}</h4>
+                          <p className="text-[#666666]">{item.description}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -147,7 +147,7 @@ export function AboutPage() {
       </section>
 
       {/* Story of Deity */}
-      <section className="py-16 bg-gradient-to-br from-[#78350f] to-[#92400e] text-white">
+      <section className="py-16 bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -179,43 +179,43 @@ export function AboutPage() {
       {/* Spiritual Significance */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-heading text-3xl md:text-4xl text-[#78350f] mb-8 text-center">
+          <h2 className="font-heading text-3xl md:text-4xl text-[#6E1F1F] mb-8 text-center">
             Spiritual Significance
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-[#d97706]/20 hover:shadow-lg transition-shadow">
+            <Card className="border-[#C9A227]/20 hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <div className="w-12 h-12 rounded-full bg-[#fef3e2] flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-[#FAF6EE] flex items-center justify-center mb-4">
                   <span className="text-2xl">🕉️</span>
                 </div>
-                <h3 className="font-heading text-xl text-[#78350f] mb-3">Moksha</h3>
-                <p className="text-[#78716c]">
+                <h3 className="font-heading text-xl text-[#6E1F1F] mb-3">Moksha</h3>
+                <p className="text-[#666666]">
                   Devotees believe that sincere worship at this temple leads to liberation from the cycle 
                   of birth and death, achieving ultimate spiritual freedom.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-[#d97706]/20 hover:shadow-lg transition-shadow">
+            <Card className="border-[#C9A227]/20 hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <div className="w-12 h-12 rounded-full bg-[#fef3e2] flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-[#FAF6EE] flex items-center justify-center mb-4">
                   <span className="text-2xl">✨</span>
                 </div>
-                <h3 className="font-heading text-xl text-[#78350f] mb-3">Divine Energy</h3>
-                <p className="text-[#78716c]">
+                <h3 className="font-heading text-xl text-[#6E1F1F] mb-3">Divine Energy</h3>
+                <p className="text-[#666666]">
                   The temple radiates powerful spiritual vibrations that cleanse the mind, body, and soul, 
                   bringing peace and positive transformation to all visitors.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-[#d97706]/20 hover:shadow-lg transition-shadow">
+            <Card className="border-[#C9A227]/20 hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <div className="w-12 h-12 rounded-full bg-[#fef3e2] flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-[#FAF6EE] flex items-center justify-center mb-4">
                   <span className="text-2xl">🙏</span>
                 </div>
-                <h3 className="font-heading text-xl text-[#78350f] mb-3">Sacred Blessings</h3>
-                <p className="text-[#78716c]">
+                <h3 className="font-heading text-xl text-[#6E1F1F] mb-3">Sacred Blessings</h3>
+                <p className="text-[#666666]">
                   Prayers offered here are believed to be especially potent, with countless devotees 
                   experiencing miraculous fulfillment of their spiritual and material wishes.
                 </p>
@@ -228,25 +228,25 @@ export function AboutPage() {
       {/* Founder/Trust Information */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-heading text-3xl md:text-4xl text-[#78350f] mb-8 text-center">
+          <h2 className="font-heading text-3xl md:text-4xl text-[#6E1F1F] mb-8 text-center">
             Temple Trust
           </h2>
-          <Card className="border-[#d97706]/20">
+          <Card className="border-[#C9A227]/20">
             <CardContent className="p-8">
-              <p className="text-[#78716c] leading-relaxed mb-4">
+              <p className="text-[#666666] leading-relaxed mb-4">
                 The Sri Mahadev Temple Trust was established in 1950 to preserve and promote the rich 
                 spiritual heritage of this sacred shrine. The trust is dedicated to maintaining the temple 
                 complex, conducting daily rituals, organizing festivals, and serving devotees from around 
                 the world.
               </p>
-              <p className="text-[#78716c] leading-relaxed mb-4">
+              <p className="text-[#666666] leading-relaxed mb-4">
                 Under the guidance of esteemed spiritual leaders and efficient management, the trust has 
                 implemented various welfare programs including Annadanam (free food distribution), 
                 educational scholarships, and healthcare services for the underprivileged.
               </p>
-              <div className="bg-[#fef3e2] rounded-lg p-6 mt-6">
-                <h4 className="font-heading text-lg text-[#78350f] mb-3">Current Management</h4>
-                <div className="space-y-2 text-sm text-[#78716c]">
+              <div className="bg-[#FAF6EE] rounded-lg p-6 mt-6">
+                <h4 className="font-heading text-lg text-[#6E1F1F] mb-3">Current Management</h4>
+                <div className="space-y-2 text-sm text-[#666666]">
                   <p><strong>Chairman:</strong> Sri Rajendra Sharma</p>
                   <p><strong>Chief Priest:</strong> Pandit Vishwanath Iyer</p>
                   <p><strong>Secretary:</strong> Dr. Lakshmi Narayan</p>
@@ -260,3 +260,4 @@ export function AboutPage() {
     </div>
   );
 }
+
