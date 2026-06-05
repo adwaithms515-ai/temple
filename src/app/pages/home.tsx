@@ -219,7 +219,7 @@ export function HomePage() {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {quickAccessCards.map((card, index) => (
+            {quickAccessCards.slice(0, 4).map((card, index) => (
               <motion.div
                 key={card.title}
                 initial={{ opacity: 0, y: 20 }}
@@ -239,6 +239,12 @@ export function HomePage() {
                 </Link>
               </motion.div>
             ))}
+          </div>
+          
+          <div className="mt-10 text-center">
+            <Button asChild variant="outline" className="border-[#d97706] text-[#d97706] hover:bg-[#fef3e2]">
+              <Link to="/about">View All Services</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -317,7 +323,7 @@ export function HomePage() {
             <CardContent className="p-0">
               <div className="aspect-[21/9] w-full">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.789218698059!2d76.9392285!3d8.4839818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05a5a1f64c673d%3A0xc348507c3eab3357!2sSree%20Padmanabhaswamy%20Temple!5e0!3m2!1sen!2sin!4v1716104325838!5m2!1sen!2sin"
+                  src="https://www.google.com/maps?q=Sri+Mahadeva+Temple,+Vaikom,+Kerala,+India&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

@@ -18,12 +18,19 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
+<<<<<<< HEAD
     { path: "/", label: "Home", ml: "ഹോം" },
     { path: "/about", label: "About", ml: "ക്ഷേത്രത്തെക്കുറിച്ച്" },
     { path: "/pooja-timings", label: "Pooja Timings", ml: "പൂജാ സമയം" },
     { path: "/festivals", label: "Festivals", ml: "ഉത്സവങ്ങൾ" },
     { path: "/vazhipadu", label: "Vazhipadu", ml: "വഴിപാട്" },
     { path: "/donations", label: "Donate", ml: "സംഭാവന" },
+=======
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About" },
+    { path: "/pooja-booking", label: "Pooja Booking" },
+    { path: "/darshan-booking", label: "Darshan" },
+>>>>>>> 5e29c944708151cf054ed461d3919c7113c94686
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -44,7 +51,11 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
+<<<<<<< HEAD
           <div className="hidden lg:flex items-center space-x-6">
+=======
+          <div className="hidden lg:flex items-center space-x-8">
+>>>>>>> 5e29c944708151cf054ed461d3919c7113c94686
             {navLinks.map((link) => (
               <Link
                 key={link.path}
