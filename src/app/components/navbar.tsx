@@ -18,19 +18,12 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-<<<<<<< HEAD
     { path: "/", label: "Home", ml: "ഹോം" },
     { path: "/about", label: "About", ml: "ക്ഷേത്രത്തെക്കുറിച്ച്" },
-    { path: "/pooja-timings", label: "Pooja Timings", ml: "പൂജാ സമയം" },
+    { path: "/pooja-booking", label: "Pooja Booking", ml: "പൂജാ ബുക്കിംഗ്" },
+    { path: "/darshan-booking", label: "Darshan", ml: "ദർശനം" },
     { path: "/festivals", label: "Festivals", ml: "ഉത്സവങ്ങൾ" },
-    { path: "/vazhipadu", label: "Vazhipadu", ml: "വഴിപാട്" },
     { path: "/donations", label: "Donate", ml: "സംഭാവന" },
-=======
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
-    { path: "/pooja-booking", label: "Pooja Booking" },
-    { path: "/darshan-booking", label: "Darshan" },
->>>>>>> 5e29c944708151cf054ed461d3919c7113c94686
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -51,11 +44,7 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-<<<<<<< HEAD
           <div className="hidden lg:flex items-center space-x-6">
-=======
-          <div className="hidden lg:flex items-center space-x-8">
->>>>>>> 5e29c944708151cf054ed461d3919c7113c94686
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -84,7 +73,10 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg text-white hover:bg-white/10"
+            className="lg:hidden p-2 rounded-lg text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[#C9A227]"
+            aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -98,7 +90,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-[#0f1b29] border-t border-white/10"
+            className="lg:hidden bg-[#1A3A6C] border-t border-white/10"
           >
             <div className="px-4 py-4 space-y-4">
               {navLinks.map((link) => (

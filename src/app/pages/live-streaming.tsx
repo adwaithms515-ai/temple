@@ -5,8 +5,8 @@ import { Video, Calendar, Users, Music } from "lucide-react";
 
 export function LiveStreamingPage() {
   return (
-    <div className="min-h-screen bg-[#faf8f5]">
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
+    <div className="min-h-screen bg-[#FAF6EE]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#1A3A6C] to-[#1A3A6C]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
             <Video className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
@@ -20,7 +20,7 @@ export function LiveStreamingPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="border-[#C9A227]/20 mb-8">
             <CardContent className="p-0">
-              <div className="relative aspect-video bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F] flex items-center justify-center">
+              <div className="relative aspect-video bg-gradient-to-br from-[#1A3A6C] to-[#1A3A6C] flex items-center justify-center">
                 <div className="text-center text-white">
                   <Video className="w-20 h-20 mx-auto mb-4 text-[#D4B870]" />
                   <h3 className="font-heading text-2xl mb-2">Live Stream Will Start Soon</h3>
@@ -37,7 +37,7 @@ export function LiveStreamingPage() {
             <Card className="border-[#C9A227]/20">
               <CardContent className="p-6">
                 <Calendar className="w-8 h-8 text-[#C9A227] mb-4" />
-                <h3 className="font-heading text-xl text-[#6E1F1F] mb-4">Live Schedule</h3>
+                <h3 className="font-heading text-xl text-[#1A3A6C] mb-4">Live Schedule</h3>
                 <ul className="space-y-3">
                   <li className="flex justify-between text-sm">
                     <span className="text-[#666666]">Morning Aarti</span>
@@ -58,7 +58,7 @@ export function LiveStreamingPage() {
             <Card className="border-[#C9A227]/20">
               <CardContent className="p-6">
                 <Music className="w-8 h-8 text-[#C9A227] mb-4" />
-                <h3 className="font-heading text-xl text-[#6E1F1F] mb-4">Devotional Music</h3>
+                <h3 className="font-heading text-xl text-[#1A3A6C] mb-4">Devotional Music</h3>
                 <p className="text-sm text-[#666666] mb-4">Listen to continuous devotional bhajans and mantras</p>
                 <div className="bg-[#FAF6EE] rounded-lg p-4 flex items-center justify-between">
                   <div className="flex items-center space-x-3">
@@ -66,7 +66,7 @@ export function LiveStreamingPage() {
                       <Music className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <p className="text-sm text-[#6E1F1F]">Om Namah Shivaya</p>
+                      <p className="text-sm text-[#1A3A6C]">Om Namah Shivaya</p>
                       <p className="text-xs text-[#666666]">Now Playing</p>
                     </div>
                   </div>

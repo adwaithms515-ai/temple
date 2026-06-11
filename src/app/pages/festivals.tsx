@@ -3,44 +3,67 @@ import { Card, CardContent } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
 import { Calendar, Clock, MapPin, Video } from "lucide-react";
 
-const FESTIVAL_IMAGE = "https://images.unsplash.com/photo-1617184003170-1f266c325ff3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZW1wbGUlMjBmZXN0aXZhbCUyMGNlbGVicmF0aW9uJTIwaW5kaWF8ZW58MXx8fHwxNzc5MTY0MjI4fDA&ixlib=rb-4.1.0&q=80&w=1080";
+const IMG_VISHU_KANI   = "/deities/vishu-kani.jpg";
+const IMG_FESTIVAL_GEN = "https://images.unsplash.com/photo-1617184003170-1f266c325ff3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080";
 
 export function FestivalsPage() {
   const upcomingFestivals = [
     {
-      name: "Maha Shivaratri",
-      date: "March 8, 2026",
-      daysLeft: 12,
-      description: "The great night of Lord Shiva with all-night prayers and abhishekam",
-      schedule: ["5:00 AM - Morning Abhishekam", "12:00 PM - Midday Pooja", "6:30 PM - Evening Aarti", "12:00 AM - Maha Aarti"],
-      image: FESTIVAL_IMAGE,
+      name: "Ashtami Rohini — Sree Krishna Jayanti",
+      malayalam: "അഷ്ടമി രോഹിണി",
+      date: "September 4, 2026",
+      daysLeft: 85,
+      description: "The grandest celebration of Thiruvannur Temple — the divine birthday of Lord Sree Krishna (Unnikrishna). Special Vennacharthu (butter decoration), Shobhayatra procession, and all-night bhajans fill the temple precincts with divine joy.",
+      schedule: [
+        "4:00 AM - Nirmalya Darshanam",
+        "5:00 AM - Special Vennacharthu Nivedyam",
+        "10:00 AM - Ashtami Abhishekam",
+        "6:30 PM - Grand Deeparadhana",
+        "8:00 PM - Shobhayatra Procession",
+        "11:00 PM - Janmashtami Midnight Celebration"
+      ],
+      image: IMG_FESTIVAL_GEN,
     },
     {
-      name: "Ugadi",
-      date: "March 30, 2026",
-      daysLeft: 34,
-      description: "New Year celebration with special prayers and prasadam distribution",
-      schedule: ["6:00 AM - New Year Pooja", "11:00 AM - Annadanam", "6:00 PM - Cultural Program"],
-      image: FESTIVAL_IMAGE,
+      name: "Vishu — Kerala New Year",
+      malayalam: "വിഷു",
+      date: "April 14, 2026",
+      daysLeft: 307,
+      description: "Vishu is the most auspicious day of the Malayalam calendar year. The Vishu Kani — a sacred arrangement of Krishna idol, Kani Uruli filled with fruits, vegetables, brass lamp, golden blossoms, and a mirror — is revealed to devotees at dawn for divine first sight (Kani Kanal) and blessings for the new year.",
+      schedule: [
+        "4:30 AM - Vishu Kani Darshanam (First Sight)",
+        "5:00 AM - Special Vishu Abhishekam",
+        "9:00 AM - Vishu Kaineetam (Gift Distribution)",
+        "11:00 AM - Sadya (Grand Feast)",
+        "6:30 PM - Vishu Deeparadhana"
+      ],
+      image: IMG_VISHU_KANI,
     },
     {
-      name: "Ram Navami",
-      date: "April 6, 2026",
-      daysLeft: 41,
-      description: "Celebration of Lord Rama's birth with continuous chanting",
-      schedule: ["5:00 AM - Morning Prayers", "12:00 PM - Rama Kalyanam", "7:00 PM - Evening Aarti"],
-      image: FESTIVAL_IMAGE,
+      name: "Thiruvathira",
+      malayalam: "തിരുവാതിര",
+      date: "January 13, 2027",
+      daysLeft: 216,
+      description: "Thiruvathira — the star festival of Lord Shiva and a beloved celebration for Kerala women — is observed with all-night Kaikottikali (clap dance), Thiruvathira Kali, fasting, and special poojas at the temple.",
+      schedule: [
+        "5:00 AM - Usha Pooja",
+        "6:00 PM - Kaikottikali Begins",
+        "8:00 PM - Special Thiruvathira Archana",
+        "11:00 PM - Night Deeparadhana"
+      ],
+      image: IMG_FESTIVAL_GEN,
     },
   ];
 
   const pastFestivals = [
-    { name: "Pongal", date: "January 14, 2026", attendees: "10,000+" },
-    { name: "Makar Sankranti", date: "January 14, 2026", attendees: "8,500+" },
-    { name: "Thai Pusam", date: "February 1, 2026", attendees: "12,000+" },
+    { name: "Guruvayur Ekadasi", date: "November 11, 2025", attendees: "15,000+" },
+    { name: "Onam (Thiruvonam)", date: "September 5, 2025", attendees: "12,000+" },
+    { name: "Vishu 2025", date: "April 14, 2025", attendees: "8,500+" },
   ];
 
+
   return (
-    <div className="min-h-screen bg-[#faf8f5]">
+    <div className="min-h-screen bg-[#FAF6EE]">
       <section className="relative h-[400px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -63,7 +86,7 @@ export function FestivalsPage() {
       {/* Upcoming Festivals */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-heading text-3xl text-[#6E1F1F] mb-8">Upcoming Festivals</h2>
+          <h2 className="font-heading text-3xl text-[#1A3A6C] mb-8">Upcoming Festivals</h2>
           <div className="space-y-8">
             {upcomingFestivals.map((festival, index) => (
               <motion.div
@@ -82,7 +105,7 @@ export function FestivalsPage() {
                       </div>
                     </div>
                     <div className="md:col-span-2 p-6">
-                      <h3 className="font-heading text-2xl text-[#6E1F1F] mb-2">{festival.name}</h3>
+                      <h3 className="font-heading text-2xl text-[#1A3A6C] mb-2">{festival.name}</h3>
                       <div className="flex items-center space-x-4 text-[#666666] mb-4">
                         <div className="flex items-center">
                           <Calendar className="w-4 h-4 mr-2 text-[#C9A227]" />
@@ -91,7 +114,7 @@ export function FestivalsPage() {
                       </div>
                       <p className="text-[#666666] mb-4">{festival.description}</p>
                       <div className="space-y-2 mb-4">
-                        <h4 className="font-heading text-[#6E1F1F]">Schedule</h4>
+                        <h4 className="font-heading text-[#1A3A6C]">Schedule</h4>
                         {festival.schedule.map((item, i) => (
                           <div key={i} className="flex items-center text-sm text-[#666666]">
                             <Clock className="w-3 h-3 mr-2 text-[#C9A227]" />
@@ -126,12 +149,12 @@ export function FestivalsPage() {
       {/* Past Festivals */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-heading text-3xl text-[#6E1F1F] mb-8">Past Celebrations</h2>
+          <h2 className="font-heading text-3xl text-[#1A3A6C] mb-8">Past Celebrations</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {pastFestivals.map((festival) => (
               <Card key={festival.name} className="border-[#C9A227]/20 hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <h3 className="font-heading text-xl text-[#6E1F1F] mb-2">{festival.name}</h3>
+                  <h3 className="font-heading text-xl text-[#1A3A6C] mb-2">{festival.name}</h3>
                   <p className="text-sm text-[#666666] mb-3">{festival.date}</p>
                   <div className="flex items-center text-[#C9A227]">
                     <MapPin className="w-4 h-4 mr-2" />

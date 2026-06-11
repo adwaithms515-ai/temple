@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://thiruvannurtemple.org/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiruvannurtemple.org/"/>
+    <xhtml:link rel="alternate" hreflang="ml" href="https://thiruvannurtemple.org/ml/"/>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiruvannurtemple.org/about"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/deities</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/pooja-booking</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/darshan-booking</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/festivals</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/rituals</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/donations</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/gallery</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/live-streaming</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/prasadam-store</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/pilgrim-info</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/testimonials</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thiruvannurtemple.org/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2026-06-11</lastmod>
+  </url>
+
+</urlset>

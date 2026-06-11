@@ -53,7 +53,7 @@ export function AdminDashboardPage() {
             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#C9A227] to-[#D4B870] flex items-center justify-center">
               <span className="text-white font-bold">ॐ</span>
             </div>
-            <span className="font-heading text-[#6E1F1F] text-lg font-bold">Admin Panel</span>
+            <span className="font-heading text-[#1A3A6C] text-lg font-bold">Admin Panel</span>
           </div>
         </SidebarHeader>
         <SidebarContent>
@@ -63,7 +63,7 @@ export function AdminDashboardPage() {
                 <SidebarMenuButton
                   isActive={activeTab === item.id}
                   onClick={() => setActiveTab(item.id)}
-                  className="w-full text-[#6E1F1F] hover:bg-[#FAF6EE] data-[active=true]:bg-[#C9A227] data-[active=true]:text-white"
+                  className="w-full text-[#1A3A6C] hover:bg-[#FAF6EE] data-[active=true]:bg-[#C9A227] data-[active=true]:text-white"
                 >
                   <item.icon className="w-5 h-5" />
                   <span className="ml-2 font-medium">{item.label}</span>
@@ -78,7 +78,7 @@ export function AdminDashboardPage() {
         <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4 bg-white/50 backdrop-blur-md sticky top-0 z-10">
           <SidebarTrigger className="-ml-1 text-[#C9A227]" />
           <div className="w-px h-4 bg-border mx-2" />
-          <h2 className="text-lg font-heading text-[#6E1F1F] capitalize">
+          <h2 className="text-lg font-heading text-[#1A3A6C] capitalize">
             {menuItems.find(i => i.id === activeTab)?.label}
           </h2>
         </header>
@@ -131,7 +131,7 @@ function DashboardView() {
                 <stat.icon className={`w-8 h-8 ${stat.color}`} />
                 <Badge className="bg-green-50 text-green-600">{stat.change}</Badge>
               </div>
-              <p className="text-3xl text-[#6E1F1F] mb-1 font-bold">{stat.value}</p>
+              <p className="text-3xl text-[#1A3A6C] mb-1 font-bold">{stat.value}</p>
               <p className="text-sm text-[#666666]">{stat.label}</p>
             </CardContent>
           </Card>
@@ -152,7 +152,7 @@ function DashboardView() {
                     <Calendar className="w-5 h-5 text-[#C9A227]" />
                   </div>
                   <div className="flex-1">
-                    <p className="font-medium text-[#6E1F1F]">New Pooja Booking</p>
+                    <p className="font-medium text-[#1A3A6C]">New Pooja Booking</p>
                     <p className="text-sm text-muted-foreground">Rajesh Kumar - Rudrabhishek</p>
                   </div>
                   <span className="text-xs text-muted-foreground">10 min ago</span>
@@ -216,7 +216,7 @@ function DeitiesView() {
             <tbody>
               {deities.map(d => (
                 <tr key={d.id} className="border-b last:border-0">
-                  <td className="px-6 py-4 font-medium text-[#6E1F1F]">{d.name}</td>
+                  <td className="px-6 py-4 font-medium text-[#1A3A6C]">{d.name}</td>
                   <td className="px-6 py-4">{d.role}</td>
                   <td className="px-6 py-4">{d.location}</td>
                   <td className="px-6 py-4 text-right flex justify-end gap-2">
@@ -304,21 +304,21 @@ function DonationsView() {
         <Card className="bg-[#FAF6EE] border-0">
           <CardContent className="p-6">
             <DollarSign className="w-8 h-8 text-[#C9A227] mb-2" />
-            <p className="text-3xl text-[#6E1F1F] mb-1 font-bold">₹1.2L</p>
+            <p className="text-3xl text-[#1A3A6C] mb-1 font-bold">₹1.2L</p>
             <p className="text-sm text-[#666666]">This Month</p>
           </CardContent>
         </Card>
         <Card className="bg-[#FAF6EE] border-0">
           <CardContent className="p-6">
             <Users className="w-8 h-8 text-[#C9A227] mb-2" />
-            <p className="text-3xl text-[#6E1F1F] mb-1 font-bold">342</p>
+            <p className="text-3xl text-[#1A3A6C] mb-1 font-bold">342</p>
             <p className="text-sm text-[#666666]">Total Donors</p>
           </CardContent>
         </Card>
         <Card className="bg-[#FAF6EE] border-0">
           <CardContent className="p-6">
             <TrendingUp className="w-8 h-8 text-[#C9A227] mb-2" />
-            <p className="text-3xl text-[#6E1F1F] mb-1 font-bold">+18%</p>
+            <p className="text-3xl text-[#1A3A6C] mb-1 font-bold">+18%</p>
             <p className="text-sm text-[#666666]">Growth</p>
           </CardContent>
         </Card>

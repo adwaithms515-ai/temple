@@ -4,45 +4,45 @@
   --font-size: 16px;
   --background: #FAF6EE; /* sandalwood */
   --foreground: #2B2B2B; /* charcoal */
-  --card: #FFFFFF;
+  --card: #FFFFFF; /* cream / surface */
   --card-foreground: #2B2B2B;
   --popover: #FFFFFF;
   --popover-foreground: #2B2B2B;
-  --primary: #C9A227; /* butter-gold */
+  --primary: #1A3A6C; /* peacock blue */
   --primary-foreground: #FFFFFF;
-  --secondary: #6E1F1F; /* temple-maroon */
-  --secondary-foreground: #FFFFFF;
+  --secondary: #C9A227; /* butter gold */
+  --secondary-foreground: #2B2B2B;
   --muted: #fcedd8; 
   --muted-foreground: #666666; /* text-muted */
-  --accent: #D4B870; /* brass-gold */
-  --accent-foreground: #6E1F1F;
-  --destructive: #B83227; /* vermillion */
+  --accent: #3A6B3A; /* tulasi green */
+  --accent-foreground: #FFFFFF;
+  --destructive: #B83227; /* vermillion / highlight */
   --destructive-foreground: #FFFFFF;
-  --border: rgba(201, 162, 39, 0.2);
+  --border: #D4B870; /* brass / divider */
   --input: transparent;
   --input-background: #fff2d9;
   --switch-background: #e7dccf;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: #C9A227;
-  --chart-1: #C9A227;
-  --chart-2: #D4B870;
-  --chart-3: #6E1F1F;
-  --chart-4: #3A6B3A; /* tulasi-green */
-  --chart-5: #B83227;
+  --ring: #1A3A6C;
+  --chart-1: #1A3A6C;
+  --chart-2: #C9A227;
+  --chart-3: #3A6B3A;
+  --chart-4: #B83227;
+  --chart-5: #D4B870;
   --radius: 12px;
   --sidebar: #FAF6EE;
   --sidebar-foreground: #2B2B2B;
-  --sidebar-primary: #C9A227;
+  --sidebar-primary: #1A3A6C;
   --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: #FFFFFF;
   --sidebar-accent-foreground: #2B2B2B;
-  --sidebar-border: rgba(201, 162, 39, 0.15);
-  --sidebar-ring: #C9A227;
+  --sidebar-border: #D4B870;
+  --sidebar-ring: #1A3A6C;
   --spiritual-gold: #C9A227;
   --spiritual-saffron: #D4B870;
   --spiritual-light: #FAF6EE;
-  --spiritual-dark: #6E1F1F;
+  --spiritual-dark: #1A3A6C;
 }
 
 .dark {
@@ -135,58 +135,63 @@
   body {
     @apply bg-background text-foreground;
     background-color: var(--background);
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0c0 16.569-13.431 30-30 30 16.569 0 30 13.431 30 30 0-16.569 13.431-30 30-30-16.569 0-30-13.431-30-30z' fill='%23e65100' fill-opacity='0.04' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0c0 16.569-13.431 30-30 30 16.569 0 30 13.431 30 30 0-16.569 13.431-30 30-30-16.569 0-30-13.431-30-30z' fill='%231a3a6c' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
     background-attachment: fixed;
+    font-size: 1.0625rem;
+    line-height: 1.5;
   }
-
-  /**
-  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
-  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
-  */
 
   html {
     font-size: var(--font-size);
   }
 
   h1 {
-    font-size: var(--text-2xl);
+    font-size: 2.5rem;
     font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+    line-height: 1.25;
   }
 
   h2 {
-    font-size: var(--text-xl);
+    font-size: 1.875rem;
     font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+    line-height: 1.3;
   }
 
   h3 {
-    font-size: var(--text-lg);
+    font-size: 1.5rem;
     font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+    line-height: 1.35;
   }
 
   h4 {
-    font-size: var(--text-base);
+    font-size: 1.2rem;
     font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
   label {
-    font-size: var(--text-base);
+    font-size: 1.0625rem;
     font-weight: var(--font-weight-medium);
     line-height: 1.5;
   }
 
   button {
-    font-size: var(--text-base);
+    font-size: 1.0625rem;
     font-weight: var(--font-weight-medium);
     line-height: 1.5;
   }
 
   input {
-    font-size: var(--text-base);
+    font-size: 1.0625rem;
     font-weight: var(--font-weight-normal);
     line-height: 1.5;
+  }
+
+  .text-sm {
+    font-size: 0.875rem !important;
+  }
+
+  [class*="font-malayalam"] {
+    line-height: 1.75 !important;
   }
 }

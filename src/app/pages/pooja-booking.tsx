@@ -63,7 +63,7 @@ export function PoojaBookingPage() {
 
   if (bookingComplete) {
     return (
-      <div className="min-h-screen bg-[#faf8f5] flex items-center justify-center px-4 py-16">
+      <div className="min-h-screen bg-[#FAF6EE] flex items-center justify-center px-4 py-16">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -74,7 +74,7 @@ export function PoojaBookingPage() {
               <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
                 <CheckCircle2 className="w-12 h-12 text-green-600" />
               </div>
-              <h2 className="font-heading text-3xl text-[#6E1F1F] mb-4">Booking Confirmed!</h2>
+              <h2 className="font-heading text-3xl text-[#1A3A6C] mb-4">Booking Confirmed!</h2>
               <p className="text-[#666666] mb-6">
                 Your pooja has been successfully booked. You will receive a confirmation email with booking details and QR code.
               </p>
@@ -82,11 +82,11 @@ export function PoojaBookingPage() {
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div className="text-left">
                     <p className="text-[#666666] mb-1">Booking ID</p>
-                    <p className="text-[#6E1F1F] font-medium">BK-{Math.random().toString(36).substr(2, 9).toUpperCase()}</p>
+                    <p className="text-[#1A3A6C] font-medium">BK-{Math.random().toString(36).substr(2, 9).toUpperCase()}</p>
                   </div>
                   <div className="text-left">
                     <p className="text-[#666666] mb-1">Date</p>
-                    <p className="text-[#6E1F1F] font-medium">{selectedDate ? format(selectedDate, "PPP") : "Not selected"}</p>
+                    <p className="text-[#1A3A6C] font-medium">{selectedDate ? format(selectedDate, "PPP") : "Not selected"}</p>
                   </div>
                 </div>
               </div>
@@ -106,9 +106,9 @@ export function PoojaBookingPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#faf8f5]">
+    <div className="min-h-screen bg-[#FAF6EE]">
       {/* Hero Section */}
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#1A3A6C] to-[#1A3A6C]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -162,7 +162,7 @@ export function PoojaBookingPage() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
               >
-                <h2 className="font-heading text-2xl text-[#6E1F1F] mb-6">Select Pooja Type</h2>
+                <h2 className="font-heading text-2xl text-[#1A3A6C] mb-6">Select Pooja Type</h2>
                 <div className="space-y-8">
                   {poojaCategories.map((category) => (
                     <div key={category.id}>
@@ -180,7 +180,7 @@ export function PoojaBookingPage() {
                           >
                             <CardContent className="p-6">
                               <div className="flex items-start justify-between mb-3">
-                                <h4 className="font-heading text-lg text-[#6E1F1F]">{item.name}</h4>
+                                <h4 className="font-heading text-lg text-[#1A3A6C]">{item.name}</h4>
                                 <Badge className="bg-[#C9A227]">{item.price}</Badge>
                               </div>
                               <p className="text-sm text-[#666666] mb-3">{item.description}</p>
@@ -214,11 +214,11 @@ export function PoojaBookingPage() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
               >
-                <h2 className="font-heading text-2xl text-[#6E1F1F] mb-6">Choose Date & Time</h2>
+                <h2 className="font-heading text-2xl text-[#1A3A6C] mb-6">Choose Date & Time</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <Card className="border-[#C9A227]/20">
                     <CardHeader>
-                      <CardTitle className="font-heading text-[#6E1F1F]">Select Date</CardTitle>
+                      <CardTitle className="font-heading text-[#1A3A6C]">Select Date</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <Calendar
@@ -233,7 +233,7 @@ export function PoojaBookingPage() {
 
                   <Card className="border-[#C9A227]/20">
                     <CardHeader>
-                      <CardTitle className="font-heading text-[#6E1F1F]">Available Time Slots</CardTitle>
+                      <CardTitle className="font-heading text-[#1A3A6C]">Available Time Slots</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <RadioGroup defaultValue="morning">
@@ -254,7 +254,7 @@ export function PoojaBookingPage() {
                             >
                               <RadioGroupItem value={slot.value} disabled={!slot.available} />
                               <div className="flex-1">
-                                <p className="font-medium text-[#6E1F1F]">{slot.label}</p>
+                                <p className="font-medium text-[#1A3A6C]">{slot.label}</p>
                                 <p className="text-sm text-[#666666]">{slot.time}</p>
                               </div>
                               {!slot.available && (
@@ -289,7 +289,7 @@ export function PoojaBookingPage() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
               >
-                <h2 className="font-heading text-2xl text-[#6E1F1F] mb-6">Devotee Details</h2>
+                <h2 className="font-heading text-2xl text-[#1A3A6C] mb-6">Devotee Details</h2>
                 <Card className="border-[#C9A227]/20">
                   <CardContent className="p-6">
                     <div className="grid md:grid-cols-2 gap-6">
@@ -364,12 +364,12 @@ export function PoojaBookingPage() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
               >
-                <h2 className="font-heading text-2xl text-[#6E1F1F] mb-6">Payment</h2>
+                <h2 className="font-heading text-2xl text-[#1A3A6C] mb-6">Payment</h2>
                 <div className="grid lg:grid-cols-3 gap-8">
                   <div className="lg:col-span-2">
                     <Card className="border-[#C9A227]/20">
                       <CardHeader>
-                        <CardTitle className="font-heading text-[#6E1F1F]">Payment Method</CardTitle>
+                        <CardTitle className="font-heading text-[#1A3A6C]">Payment Method</CardTitle>
                       </CardHeader>
                       <CardContent>
                         <RadioGroup defaultValue="upi">
@@ -377,21 +377,21 @@ export function PoojaBookingPage() {
                             <div className="flex items-center space-x-3 p-4 rounded-lg border border-[#C9A227]/20 hover:bg-[#FAF6EE]/50">
                               <RadioGroupItem value="upi" />
                               <div className="flex-1">
-                                <p className="font-medium text-[#6E1F1F]">UPI Payment</p>
+                                <p className="font-medium text-[#1A3A6C]">UPI Payment</p>
                                 <p className="text-sm text-[#666666]">Google Pay, PhonePe, Paytm</p>
                               </div>
                             </div>
                             <div className="flex items-center space-x-3 p-4 rounded-lg border border-[#C9A227]/20 hover:bg-[#FAF6EE]/50">
                               <RadioGroupItem value="card" />
                               <div className="flex-1">
-                                <p className="font-medium text-[#6E1F1F]">Credit/Debit Card</p>
+                                <p className="font-medium text-[#1A3A6C]">Credit/Debit Card</p>
                                 <p className="text-sm text-[#666666]">Visa, Mastercard, Rupay</p>
                               </div>
                             </div>
                             <div className="flex items-center space-x-3 p-4 rounded-lg border border-[#C9A227]/20 hover:bg-[#FAF6EE]/50">
                               <RadioGroupItem value="netbanking" />
                               <div className="flex-1">
-                                <p className="font-medium text-[#6E1F1F]">Net Banking</p>
+                                <p className="font-medium text-[#1A3A6C]">Net Banking</p>
                                 <p className="text-sm text-[#666666]">All major banks supported</p>
                               </div>
                             </div>
@@ -404,33 +404,33 @@ export function PoojaBookingPage() {
                   <div>
                     <Card className="border-[#C9A227]/20 sticky top-24">
                       <CardHeader>
-                        <CardTitle className="font-heading text-[#6E1F1F]">Booking Summary</CardTitle>
+                        <CardTitle className="font-heading text-[#1A3A6C]">Booking Summary</CardTitle>
                       </CardHeader>
                       <CardContent>
                         <div className="space-y-4">
                           <div>
                             <p className="text-sm text-[#666666]">Pooja Type</p>
-                            <p className="text-[#6E1F1F]">Rudrabhishek</p>
+                            <p className="text-[#1A3A6C]">Rudrabhishek</p>
                           </div>
                           <div>
                             <p className="text-sm text-[#666666]">Date</p>
-                            <p className="text-[#6E1F1F]">{selectedDate ? format(selectedDate, "PPP") : "Not selected"}</p>
+                            <p className="text-[#1A3A6C]">{selectedDate ? format(selectedDate, "PPP") : "Not selected"}</p>
                           </div>
                           <div>
                             <p className="text-sm text-[#666666]">Time</p>
-                            <p className="text-[#6E1F1F]">8:00 AM - 11:00 AM</p>
+                            <p className="text-[#1A3A6C]">8:00 AM - 11:00 AM</p>
                           </div>
                           <div className="border-t border-[#C9A227]/20 pt-4">
                             <div className="flex justify-between mb-2">
                               <span className="text-[#666666]">Pooja Amount</span>
-                              <span className="text-[#6E1F1F]">₹501</span>
+                              <span className="text-[#1A3A6C]">₹501</span>
                             </div>
                             <div className="flex justify-between mb-2">
                               <span className="text-[#666666]">Prasadam</span>
-                              <span className="text-[#6E1F1F]">₹100</span>
+                              <span className="text-[#1A3A6C]">₹100</span>
                             </div>
                             <div className="flex justify-between pt-2 border-t border-[#C9A227]/20">
-                              <span className="text-lg text-[#6E1F1F]">Total</span>
+                              <span className="text-lg text-[#1A3A6C]">Total</span>
                               <span className="text-lg text-[#C9A227]">₹601</span>
                             </div>
                           </div>

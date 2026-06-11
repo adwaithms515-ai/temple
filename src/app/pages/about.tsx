@@ -22,7 +22,7 @@ export function AboutPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#faf8f5]">
+    <div className="min-h-screen bg-[#FAF6EE]">
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
         <div
@@ -59,7 +59,7 @@ export function AboutPage() {
                 <Card className="border-[#C9A227]/20 hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 text-center">
                     <stat.icon className="w-10 h-10 text-[#C9A227] mx-auto mb-3" />
-                    <p className="text-2xl md:text-3xl text-[#6E1F1F] mb-1">{stat.value}</p>
+                    <p className="text-2xl md:text-3xl text-[#1A3A6C] mb-1">{stat.value}</p>
                     <p className="text-sm text-[#666666]">{stat.label}</p>
                   </CardContent>
                 </Card>
@@ -78,7 +78,7 @@ export function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-heading text-3xl md:text-4xl text-[#6E1F1F] mb-6">Temple History</h2>
+              <h2 className="font-heading text-3xl md:text-4xl text-[#1A3A6C] mb-6">Temple History</h2>
               <div className="space-y-4 text-[#666666] leading-relaxed">
                 <p>
                   Sri Mahadev Temple stands as a testament to centuries of unwavering faith and devotion. 
@@ -114,7 +114,7 @@ export function AboutPage() {
 
           {/* Timeline */}
           <div className="mt-16">
-            <h3 className="font-heading text-2xl md:text-3xl text-[#6E1F1F] mb-8 text-center">Historical Timeline</h3>
+            <h3 className="font-heading text-2xl md:text-3xl text-[#1A3A6C] mb-8 text-center">Historical Timeline</h3>
             <div className="space-y-8">
               {timeline.map((item, index) => (
                 <motion.div
@@ -133,7 +133,7 @@ export function AboutPage() {
                           </div>
                         </div>
                         <div className="flex-1">
-                          <h4 className="font-heading text-xl text-[#6E1F1F] mb-2">{item.event}</h4>
+                          <h4 className="font-heading text-xl text-[#1A3A6C] mb-2">{item.event}</h4>
                           <p className="text-[#666666]">{item.description}</p>
                         </div>
                       </div>
@@ -147,7 +147,7 @@ export function AboutPage() {
       </section>
 
       {/* Story of Deity */}
-      <section className="py-16 bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F] text-white">
+      <section className="py-16 bg-gradient-to-br from-[#1A3A6C] to-[#1A3A6C] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -179,7 +179,7 @@ export function AboutPage() {
       {/* Spiritual Significance */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-heading text-3xl md:text-4xl text-[#6E1F1F] mb-8 text-center">
+          <h2 className="font-heading text-3xl md:text-4xl text-[#1A3A6C] mb-8 text-center">
             Spiritual Significance
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -188,7 +188,7 @@ export function AboutPage() {
                 <div className="w-12 h-12 rounded-full bg-[#FAF6EE] flex items-center justify-center mb-4">
                   <span className="text-2xl">🕉️</span>
                 </div>
-                <h3 className="font-heading text-xl text-[#6E1F1F] mb-3">Moksha</h3>
+                <h3 className="font-heading text-xl text-[#1A3A6C] mb-3">Moksha</h3>
                 <p className="text-[#666666]">
                   Devotees believe that sincere worship at this temple leads to liberation from the cycle 
                   of birth and death, achieving ultimate spiritual freedom.
@@ -201,7 +201,7 @@ export function AboutPage() {
                 <div className="w-12 h-12 rounded-full bg-[#FAF6EE] flex items-center justify-center mb-4">
                   <span className="text-2xl">✨</span>
                 </div>
-                <h3 className="font-heading text-xl text-[#6E1F1F] mb-3">Divine Energy</h3>
+                <h3 className="font-heading text-xl text-[#1A3A6C] mb-3">Divine Energy</h3>
                 <p className="text-[#666666]">
                   The temple radiates powerful spiritual vibrations that cleanse the mind, body, and soul, 
                   bringing peace and positive transformation to all visitors.
@@ -214,7 +214,7 @@ export function AboutPage() {
                 <div className="w-12 h-12 rounded-full bg-[#FAF6EE] flex items-center justify-center mb-4">
                   <span className="text-2xl">🙏</span>
                 </div>
-                <h3 className="font-heading text-xl text-[#6E1F1F] mb-3">Sacred Blessings</h3>
+                <h3 className="font-heading text-xl text-[#1A3A6C] mb-3">Sacred Blessings</h3>
                 <p className="text-[#666666]">
                   Prayers offered here are believed to be especially potent, with countless devotees 
                   experiencing miraculous fulfillment of their spiritual and material wishes.
@@ -228,7 +228,7 @@ export function AboutPage() {
       {/* Founder/Trust Information */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-heading text-3xl md:text-4xl text-[#6E1F1F] mb-8 text-center">
+          <h2 className="font-heading text-3xl md:text-4xl text-[#1A3A6C] mb-8 text-center">
             Temple Trust
           </h2>
           <Card className="border-[#C9A227]/20">
@@ -245,7 +245,7 @@ export function AboutPage() {
                 educational scholarships, and healthcare services for the underprivileged.
               </p>
               <div className="bg-[#FAF6EE] rounded-lg p-6 mt-6">
-                <h4 className="font-heading text-lg text-[#6E1F1F] mb-3">Current Management</h4>
+                <h4 className="font-heading text-lg text-[#1A3A6C] mb-3">Current Management</h4>
                 <div className="space-y-2 text-sm text-[#666666]">
                   <p><strong>Chairman:</strong> Sri Rajendra Sharma</p>
                   <p><strong>Chief Priest:</strong> Pandit Vishwanath Iyer</p>

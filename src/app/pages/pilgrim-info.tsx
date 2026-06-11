@@ -4,8 +4,8 @@ import { MapPin, Hotel, Car, Info, DollarSign, AlertCircle } from "lucide-react"
 
 export function PilgrimInfoPage() {
   return (
-    <div className="min-h-screen bg-[#faf8f5]">
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
+    <div className="min-h-screen bg-[#FAF6EE]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#1A3A6C] to-[#1A3A6C]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
             <MapPin className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
@@ -21,7 +21,7 @@ export function PilgrimInfoPage() {
             <Card className="border-[#C9A227]/20">
               <CardContent className="p-6">
                 <Hotel className="w-10 h-10 text-[#C9A227] mb-4" />
-                <h3 className="font-heading text-xl text-[#6E1F1F] mb-3">Accommodation</h3>
+                <h3 className="font-heading text-xl text-[#1A3A6C] mb-3">Accommodation</h3>
                 <ul className="space-y-2 text-sm text-[#666666]">
                   <li>• Temple Guest House: ₹500-1000/night</li>
                   <li>• Dharamshala: ₹200/night</li>
@@ -33,7 +33,7 @@ export function PilgrimInfoPage() {
             <Card className="border-[#C9A227]/20">
               <CardContent className="p-6">
                 <Car className="w-10 h-10 text-[#C9A227] mb-4" />
-                <h3 className="font-heading text-xl text-[#6E1F1F] mb-3">Parking</h3>
+                <h3 className="font-heading text-xl text-[#1A3A6C] mb-3">Parking</h3>
                 <ul className="space-y-2 text-sm text-[#666666]">
                   <li>• Two-wheeler: ₹20</li>
                   <li>• Four-wheeler: ₹50</li>
@@ -46,7 +46,7 @@ export function PilgrimInfoPage() {
             <Card className="border-[#C9A227]/20">
               <CardContent className="p-6">
                 <Info className="w-10 h-10 text-[#C9A227] mb-4" />
-                <h3 className="font-heading text-xl text-[#6E1F1F] mb-3">Dress Code</h3>
+                <h3 className="font-heading text-xl text-[#1A3A6C] mb-3">Dress Code</h3>
                 <ul className="space-y-2 text-sm text-[#666666]">
                   <li>• Traditional attire preferred</li>
                   <li>• Remove footwear at entrance</li>
@@ -59,7 +59,7 @@ export function PilgrimInfoPage() {
             <Card className="border-[#C9A227]/20">
               <CardContent className="p-6">
                 <AlertCircle className="w-10 h-10 text-[#C9A227] mb-4" />
-                <h3 className="font-heading text-xl text-[#6E1F1F] mb-3">Temple Rules</h3>
+                <h3 className="font-heading text-xl text-[#1A3A6C] mb-3">Temple Rules</h3>
                 <ul className="space-y-2 text-sm text-[#666666]">
                   <li>• Maintain silence in sanctum</li>
                   <li>• No photography inside temple</li>
@@ -72,7 +72,7 @@ export function PilgrimInfoPage() {
             <Card className="border-[#C9A227]/20">
               <CardContent className="p-6">
                 <MapPin className="w-10 h-10 text-[#C9A227] mb-4" />
-                <h3 className="font-heading text-xl text-[#6E1F1F] mb-3">How to Reach</h3>
+                <h3 className="font-heading text-xl text-[#1A3A6C] mb-3">How to Reach</h3>
                 <ul className="space-y-2 text-sm text-[#666666]">
                   <li>• By Air: 25 km from airport</li>
                   <li>• By Train: 5 km from station</li>
@@ -85,7 +85,7 @@ export function PilgrimInfoPage() {
             <Card className="border-[#C9A227]/20">
               <CardContent className="p-6">
                 <DollarSign className="w-10 h-10 text-[#C9A227] mb-4" />
-                <h3 className="font-heading text-xl text-[#6E1F1F] mb-3">Facilities</h3>
+                <h3 className="font-heading text-xl text-[#1A3A6C] mb-3">Facilities</h3>
                 <ul className="space-y-2 text-sm text-[#666666]">
                   <li>• Free drinking water</li>
                   <li>• Restrooms available</li>
@@ -98,7 +98,7 @@ export function PilgrimInfoPage() {
 
           <Card className="border-[#C9A227]/20 mt-8">
             <CardContent className="p-6">
-              <h3 className="font-heading text-xl text-[#6E1F1F] mb-4">Map & Directions</h3>
+              <h3 className="font-heading text-xl text-[#1A3A6C] mb-4">Map & Directions</h3>
               <div className="aspect-video bg-[#FAF6EE] rounded-lg flex items-center justify-center">
                 <MapPin className="w-16 h-16 text-[#C9A227]" />
               </div>

@@ -27,8 +27,8 @@ export function DonationsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#faf8f5]">
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
+    <div className="min-h-screen bg-[#FAF6EE]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#1A3A6C] to-[#1A3A6C]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
             <Heart className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
@@ -44,7 +44,7 @@ export function DonationsPage() {
             <div className="lg:col-span-2">
               <Card className="border-[#C9A227]/20 mb-8">
                 <CardHeader>
-                  <CardTitle className="font-heading text-[#6E1F1F]">Select Donation Category</CardTitle>
+                  <CardTitle className="font-heading text-[#1A3A6C]">Select Donation Category</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <RadioGroup value={selectedCategory} onValueChange={setSelectedCategory}>
@@ -57,7 +57,7 @@ export function DonationsPage() {
                           <RadioGroupItem value={cat.id} />
                           <cat.icon className="w-6 h-6 text-[#C9A227]" />
                           <div className="flex-1">
-                            <p className="font-heading text-[#6E1F1F]">{cat.name}</p>
+                            <p className="font-heading text-[#1A3A6C]">{cat.name}</p>
                             <p className="text-sm text-[#666666]">{cat.description}</p>
                           </div>
                         </div>
@@ -69,7 +69,7 @@ export function DonationsPage() {
 
               <Card className="border-[#C9A227]/20">
                 <CardHeader>
-                  <CardTitle className="font-heading text-[#6E1F1F]">Donation Amount</CardTitle>
+                  <CardTitle className="font-heading text-[#1A3A6C]">Donation Amount</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-3 md:grid-cols-5 gap-3 mb-6">
@@ -119,7 +119,7 @@ export function DonationsPage() {
             <div className="space-y-6">
               <Card className="border-[#C9A227]/20 bg-gradient-to-br from-[#FAF6EE] to-white">
                 <CardContent className="p-6">
-                  <h3 className="font-heading text-xl text-[#6E1F1F] mb-4">Impact of Your Donation</h3>
+                  <h3 className="font-heading text-xl text-[#1A3A6C] mb-4">Impact of Your Donation</h3>
                   <ul className="space-y-3 text-sm text-[#666666]">
                     <li className="flex items-start">
                       <div className="w-1.5 h-1.5 rounded-full bg-[#C9A227] mr-2 mt-2"></div>
@@ -139,13 +139,13 @@ export function DonationsPage() {
 
               <Card className="border-[#C9A227]/20">
                 <CardHeader>
-                  <CardTitle className="font-heading text-[#6E1F1F]">Recent Donors</CardTitle>
+                  <CardTitle className="font-heading text-[#1A3A6C]">Recent Donors</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
                     {recentDonors.map((donor, index) => (
                       <div key={index} className="p-3 bg-[#FAF6EE] rounded-lg">
-                        <p className="text-[#6E1F1F]">{donor.name}</p>
+                        <p className="text-[#1A3A6C]">{donor.name}</p>
                         <div className="flex items-center justify-between text-sm">
                           <span className="text-[#666666]">{donor.category}</span>
                           <span className="text-[#C9A227]">{donor.amount}</span>
@@ -156,7 +156,7 @@ export function DonationsPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-[#C9A227]/20 bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F] text-white">
+              <Card className="border-[#C9A227]/20 bg-gradient-to-br from-[#1A3A6C] to-[#1A3A6C] text-white">
                 <CardContent className="p-6 text-center">
                   <Sparkles className="w-12 h-12 mx-auto mb-3 text-[#D4B870]" />
                   <p className="text-sm">

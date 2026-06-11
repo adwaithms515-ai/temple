@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Disallow admin panel from search crawlers
+Disallow: /admin
+
+Sitemap: https://thiruvannurtemple.org/sitemap.xml

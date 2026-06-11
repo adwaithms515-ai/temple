@@ -8,8 +8,8 @@ import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Instagram, Youtube } fro
 
 export function ContactPage() {
   return (
-    <div className="min-h-screen bg-[#faf8f5]">
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
+    <div className="min-h-screen bg-[#FAF6EE]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#1A3A6C] to-[#1A3A6C]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
             <Phone className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
@@ -27,7 +27,7 @@ export function ContactPage() {
               <Card className="border-[#C9A227]/20">
                 <CardContent className="p-6">
                   <MapPin className="w-10 h-10 text-[#C9A227] mb-4" />
-                  <h3 className="font-heading text-lg text-[#6E1F1F] mb-2">Address</h3>
+                  <h3 className="font-heading text-lg text-[#1A3A6C] mb-2">Address</h3>
                   <p className="text-sm text-[#666666]">
                     Temple Road, Sacred City<br />
                     Kerala, India - 695001
@@ -38,7 +38,7 @@ export function ContactPage() {
               <Card className="border-[#C9A227]/20">
                 <CardContent className="p-6">
                   <Phone className="w-10 h-10 text-[#C9A227] mb-4" />
-                  <h3 className="font-heading text-lg text-[#6E1F1F] mb-2">Phone</h3>
+                  <h3 className="font-heading text-lg text-[#1A3A6C] mb-2">Phone</h3>
                   <p className="text-sm text-[#666666]">
                     Office: +91 9876543210<br />
                     Emergency: +91 9876543211
@@ -49,7 +49,7 @@ export function ContactPage() {
               <Card className="border-[#C9A227]/20">
                 <CardContent className="p-6">
                   <Mail className="w-10 h-10 text-[#C9A227] mb-4" />
-                  <h3 className="font-heading text-lg text-[#6E1F1F] mb-2">Email</h3>
+                  <h3 className="font-heading text-lg text-[#1A3A6C] mb-2">Email</h3>
                   <p className="text-sm text-[#666666]">
                     info@mahadevtemple.org<br />
                     admin@mahadevtemple.org
@@ -60,7 +60,7 @@ export function ContactPage() {
               <Card className="border-[#C9A227]/20">
                 <CardContent className="p-6">
                   <Clock className="w-10 h-10 text-[#C9A227] mb-4" />
-                  <h3 className="font-heading text-lg text-[#6E1F1F] mb-2">Office Hours</h3>
+                  <h3 className="font-heading text-lg text-[#1A3A6C] mb-2">Office Hours</h3>
                   <p className="text-sm text-[#666666]">
                     Mon - Sat: 9:00 AM - 6:00 PM<br />
                     Sunday: 9:00 AM - 1:00 PM
@@ -68,7 +68,7 @@ export function ContactPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-[#C9A227]/20 bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F] text-white">
+              <Card className="border-[#C9A227]/20 bg-gradient-to-br from-[#1A3A6C] to-[#1A3A6C] text-white">
                 <CardContent className="p-6">
                   <h3 className="font-heading text-lg mb-4">Follow Us</h3>
                   <div className="flex gap-3">
@@ -93,7 +93,7 @@ export function ContactPage() {
             <div className="lg:col-span-2">
               <Card className="border-[#C9A227]/20">
                 <CardContent className="p-8">
-                  <h2 className="font-heading text-2xl text-[#6E1F1F] mb-6">Send us a Message</h2>
+                  <h2 className="font-heading text-2xl text-[#1A3A6C] mb-6">Send us a Message</h2>
                   <form className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2">

@@ -21,8 +21,8 @@ export function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <div className="min-h-screen bg-[#faf8f5]">
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
+    <div className="min-h-screen bg-[#FAF6EE]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#1A3A6C] to-[#1A3A6C]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
             <Camera className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
@@ -77,7 +77,7 @@ export function GalleryPage() {
                       <Video className="w-16 h-16 text-[#C9A227]" />
                     </div>
                     <div className="p-4">
-                      <h3 className="font-heading text-[#6E1F1F] mb-1">Festival Celebration {i}</h3>
+                      <h3 className="font-heading text-[#1A3A6C] mb-1">Festival Celebration {i}</h3>
                       <p className="text-sm text-[#666666]">Duration: 5:30</p>
                     </div>
                   </Card>

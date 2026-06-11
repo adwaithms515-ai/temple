@@ -30,8 +30,8 @@ export function PrasadamStorePage() {
   }, 0);
 
   return (
-    <div className="min-h-screen bg-[#faf8f5]">
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
+    <div className="min-h-screen bg-[#FAF6EE]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#1A3A6C] to-[#1A3A6C]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
             <ShoppingCart className="w-16 h-16 text-[#D4B870] mx-auto mb-4" />
@@ -59,7 +59,7 @@ export function PrasadamStorePage() {
                           <ShoppingCart className="w-16 h-16 text-[#C9A227]" />
                         </div>
                         <Badge className="mb-2 bg-[#FAF6EE] text-[#C9A227]">{product.category}</Badge>
-                        <h3 className="font-heading text-lg text-[#6E1F1F] mb-2">{product.name}</h3>
+                        <h3 className="font-heading text-lg text-[#1A3A6C] mb-2">{product.name}</h3>
                         <p className="text-[#C9A227] text-xl mb-4">₹{product.price}</p>
                         {cart[product.id] ? (
                           <div className="flex items-center justify-between bg-[#FAF6EE] rounded-lg p-2">
@@ -70,7 +70,7 @@ export function PrasadamStorePage() {
                             >
                               <Minus className="w-4 h-4" />
                             </Button>
-                            <span className="text-[#6E1F1F]">{cart[product.id]}</span>
+                            <span className="text-[#1A3A6C]">{cart[product.id]}</span>
                             <Button
                               size="sm"
                               variant="ghost"
@@ -97,7 +97,7 @@ export function PrasadamStorePage() {
             <div>
               <Card className="border-[#C9A227]/20 sticky top-24">
                 <CardContent className="p-6">
-                  <h3 className="font-heading text-xl text-[#6E1F1F] mb-4">Cart Summary</h3>
+                  <h3 className="font-heading text-xl text-[#1A3A6C] mb-4">Cart Summary</h3>
                   {Object.keys(cart).length === 0 ? (
                     <p className="text-[#666666] text-sm">Your cart is empty</p>
                   ) : (
@@ -111,14 +111,14 @@ export function PrasadamStorePage() {
                               <span className="text-[#666666]">
                                 {product.name} x{qty}
                               </span>
-                              <span className="text-[#6E1F1F]">₹{product.price * qty}</span>
+                              <span className="text-[#1A3A6C]">₹{product.price * qty}</span>
                             </div>
                           );
                         })}
                       </div>
                       <div className="border-t border-[#C9A227]/20 pt-4 mb-4">
                         <div className="flex justify-between text-lg">
-                          <span className="text-[#6E1F1F]">Total</span>
+                          <span className="text-[#1A3A6C]">Total</span>
                           <span className="text-[#C9A227]">₹{cartTotal}</span>
                         </div>
                       </div>

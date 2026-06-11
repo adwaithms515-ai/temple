@@ -30,9 +30,9 @@ export function DarshanBookingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#faf8f5]">
+    <div className="min-h-screen bg-[#FAF6EE]">
       {/* Hero */}
-      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#6E1F1F] to-[#6E1F1F]">
+      <section className="relative h-[300px] overflow-hidden bg-gradient-to-br from-[#1A3A6C] to-[#1A3A6C]">
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -60,7 +60,7 @@ export function DarshanBookingPage() {
               <CardContent className="p-8">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="font-heading text-2xl text-[#6E1F1F] mb-2">Normal Queue</h3>
+                    <h3 className="font-heading text-2xl text-[#1A3A6C] mb-2">Normal Queue</h3>
                     <Badge className="bg-green-600">Free</Badge>
                   </div>
                   <Users className="w-12 h-12 text-[#C9A227]" />
@@ -93,7 +93,7 @@ export function DarshanBookingPage() {
               <CardContent className="p-8">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="font-heading text-2xl text-[#6E1F1F] mb-2">VIP Queue</h3>
+                    <h3 className="font-heading text-2xl text-[#1A3A6C] mb-2">VIP Queue</h3>
                     <Badge className="bg-[#C9A227]">₹500</Badge>
                   </div>
                   <TrendingUp className="w-12 h-12 text-[#C9A227]" />
@@ -120,7 +120,7 @@ export function DarshanBookingPage() {
           <div className="grid lg:grid-cols-2 gap-8">
             <Card className="border-[#C9A227]/20">
               <CardContent className="p-6">
-                <h3 className="font-heading text-xl text-[#6E1F1F] mb-4">Select Date</h3>
+                <h3 className="font-heading text-xl text-[#1A3A6C] mb-4">Select Date</h3>
                 <Calendar
                   mode="single"
                   selected={selectedDate}
@@ -132,7 +132,7 @@ export function DarshanBookingPage() {
             </Card>
 
             <div className="space-y-4">
-              <h3 className="font-heading text-xl text-[#6E1F1F] mb-4">Available Time Slots</h3>
+              <h3 className="font-heading text-xl text-[#1A3A6C] mb-4">Available Time Slots</h3>
               {timeSlots.map((slot, index) => (
                 <motion.div
                   key={slot.time}
@@ -146,7 +146,7 @@ export function DarshanBookingPage() {
                         <div className="flex items-center space-x-4">
                           <Clock className="w-5 h-5 text-[#C9A227]" />
                           <div>
-                            <p className="text-[#6E1F1F]">{slot.time}</p>
+                            <p className="text-[#1A3A6C]">{slot.time}</p>
                             <p className="text-sm text-[#666666]">
                               {slot.available} slots available
                             </p>

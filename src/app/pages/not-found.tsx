@@ -5,14 +5,14 @@ import { Home, ArrowLeft } from "lucide-react";
 
 export function NotFoundPage() {
   return (
-    <div className="min-h-screen bg-[#faf8f5] flex items-center justify-center px-4">
+    <div className="min-h-screen bg-[#FAF6EE] flex items-center justify-center px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="text-center max-w-2xl"
       >
         <h1 className="font-heading text-9xl text-[#C9A227] mb-4">404</h1>
-        <h2 className="font-heading text-3xl md:text-4xl text-[#6E1F1F] mb-4">
+        <h2 className="font-heading text-3xl md:text-4xl text-[#1A3A6C] mb-4">
           Page Not Found
         </h2>
         <p className="text-[#666666] mb-8 text-lg">
