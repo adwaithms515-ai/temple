@@ -70,6 +70,7 @@ export function Footer() {
               <li><Link to="/rituals" className="hover:text-[#D4B870] transition-colors">Daily Rituals &amp; Timings</Link></li>
               <li><Link to="/gallery" className="hover:text-[#D4B870] transition-colors">Gallery</Link></li>
               <li><Link to="/blog" className="hover:text-[#D4B870] transition-colors">Temple News</Link></li>
+              <li><Link to="/admin" className="hover:text-[#D4B870] transition-colors text-[#C9A227] font-semibold flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-[#C9A227]"></div>Admin Dashboard</Link></li>
             </ul>
           </div>
 

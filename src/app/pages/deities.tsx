@@ -116,9 +116,9 @@ export function DeitiesPage() {
                 >
                   <Card
                     className={`cursor-pointer transition-all ${
-                      selectedDeity === index
-                        ? "border-[#C9A227] shadow-lg bg-gradient-to-br from-[#FAF6EE] to-white"
-                        : "border-[#C9A227]/20 hover:shadow-md"
+                        selectedDeity === index
+                          ? "border-[#C9A227] shadow-lg bg-gradient-to-br from-[#FAF6EE] to-white"
+                          : "border-[#C9A227]/20 bg-white hover:bg-[#FAF6EE]/50 hover:shadow-md"
                     }`}
                     onClick={() => setSelectedDeity(index)}
                   >

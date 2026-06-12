@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
+import { initializePayment } from "../../lib/razorpay";
 import { motion } from "motion/react";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
 import { Button } from "../components/ui/button";
@@ -17,6 +18,11 @@ export function PoojaBookingPage() {
   const [selectedPooja, setSelectedPooja] = useState("");
   const [selectedDate, setSelectedDate] = useState<Date>();
   const [bookingComplete, setBookingComplete] = useState(false);
+  
+  const [devoteeName, setDevoteeName] = useState("");
+  const [devoteeEmail, setDevoteeEmail] = useState("");
+  const [devoteePhone, setDevoteePhone] = useState("");
+  const [isProcessing, setIsProcessing] = useState(false);
 
   const poojaCategories = [
     {
@@ -56,9 +62,43 @@ export function PoojaBookingPage() {
     },
   ];
 
-  const handleBooking = (e: React.FormEvent) => {
+  const getSelectedPoojaDetails = () => {
+    for (const category of poojaCategories) {
+      const found = category.items.find(item => item.id === selectedPooja);
+      if (found) return found;
+    }
+    return null;
+  };
+
+  const handleBooking = async (e: React.FormEvent) => {
     e.preventDefault();
-    setBookingComplete(true);
+    const poojaDetails = getSelectedPoojaDetails();
+    if (!poojaDetails) return;
+
+    // Remove ₹ and commas to get the raw number
+    const basePrice = Number(poojaDetails.price.replace(/[^0-9]/g, ""));
+    const prasadamPrice = 100;
+    const totalAmount = basePrice + prasadamPrice;
+
+    setIsProcessing(true);
+
+    await initializePayment({
+      amount: totalAmount,
+      name: "Pooja Booking",
+      description: `${poojaDetails.name} Booking`,
+      customerName: devoteeName,
+      customerEmail: devoteeEmail,
+      customerPhone: devoteePhone,
+      onSuccess: (response) => {
+        setIsProcessing(false);
+        setBookingComplete(true);
+      },
+      onError: (error) => {
+        setIsProcessing(false);
+        console.error("Payment Error:", error);
+        alert(error.description || "Payment failed. Please try again.");
+      },
+    });
   };
 
   if (bookingComplete) {
@@ -295,7 +335,7 @@ export function PoojaBookingPage() {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="name">Full Name *</Label>
-                        <Input id="name" placeholder="Enter full name" required />
+                        <Input id="name" placeholder="Enter full name" value={devoteeName} onChange={(e) => setDevoteeName(e.target.value)} required />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="gotra">Gotra</Label>
@@ -330,11 +370,11 @@ export function PoojaBookingPage() {
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="phone">Phone Number *</Label>
-                        <Input id="phone" type="tel" placeholder="+91 9876543210" required />
+                        <Input id="phone" type="tel" placeholder="+91 9876543210" value={devoteePhone} onChange={(e) => setDevoteePhone(e.target.value)} required />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="email">Email *</Label>
-                        <Input id="email" type="email" placeholder="your@email.com" required />
+                        <Input id="email" type="email" placeholder="your@email.com" value={devoteeEmail} onChange={(e) => setDevoteeEmail(e.target.value)} required />
                       </div>
                       <div className="md:col-span-2 space-y-2">
                         <Label htmlFor="special">Special Requests (Optional)</Label>
@@ -423,7 +463,7 @@ export function PoojaBookingPage() {
                           <div className="border-t border-[#C9A227]/20 pt-4">
                             <div className="flex justify-between mb-2">
                               <span className="text-[#666666]">Pooja Amount</span>
-                              <span className="text-[#1A3A6C]">₹501</span>
+                              <span className="text-[#1A3A6C]">{getSelectedPoojaDetails()?.price || "₹0"}</span>
                             </div>
                             <div className="flex justify-between mb-2">
                               <span className="text-[#666666]">Prasadam</span>
@@ -431,7 +471,7 @@ export function PoojaBookingPage() {
                             </div>
                             <div className="flex justify-between pt-2 border-t border-[#C9A227]/20">
                               <span className="text-lg text-[#1A3A6C]">Total</span>
-                              <span className="text-lg text-[#C9A227]">₹601</span>
+                              <span className="text-lg text-[#C9A227]">₹{getSelectedPoojaDetails() ? Number(getSelectedPoojaDetails()?.price.replace(/[^0-9]/g, "")) + 100 : 0}</span>
                             </div>
                           </div>
                         </div>
@@ -443,9 +483,9 @@ export function PoojaBookingPage() {
                   <Button type="button" variant="outline" onClick={() => setStep(3)}>
                     Back
                   </Button>
-                  <Button type="submit" className="bg-[#C9A227] hover:bg-[#D4B870]">
+                  <Button type="submit" className="bg-[#C9A227] hover:bg-[#D4B870]" disabled={isProcessing}>
                     <CreditCard className="w-4 h-4 mr-2" />
-                    Complete Payment
+                    {isProcessing ? "Processing..." : "Complete Payment"}
                   </Button>
                 </div>
               </motion.div>
